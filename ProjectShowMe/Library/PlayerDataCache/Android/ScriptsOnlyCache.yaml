@@ -1,33 +1,22 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - UnityTemplateProjects.SimpleCameraController
+    - Humans.Human
+    - PatrolPoints
+    - UFOController
+    NavMeshComponents.dll:
+    - UnityEngine.AI.NavMeshSurface
+    NavMeshComponentsEditor.dll:
+    - UnityEditor.AI.NavMeshAssetManager
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
-    Unity.Postprocessing.Runtime.dll:
-    - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
-    - UnityEngine.Rendering.PostProcessing.AutoExposure
-    - UnityEngine.Rendering.PostProcessing.Bloom
-    - UnityEngine.Rendering.PostProcessing.ChromaticAberration
-    - UnityEngine.Rendering.PostProcessing.ColorGrading
-    - UnityEngine.Rendering.PostProcessing.DepthOfField
-    - UnityEngine.Rendering.PostProcessing.Grain
-    - UnityEngine.Rendering.PostProcessing.LensDistortion
-    - UnityEngine.Rendering.PostProcessing.MotionBlur
-    - UnityEngine.Rendering.PostProcessing.PostProcessLayer
-    - UnityEngine.Rendering.PostProcessing.PostProcessProfile
-    - UnityEngine.Rendering.PostProcessing.PostProcessResources
-    - UnityEngine.Rendering.PostProcessing.PostProcessVolume
-    - UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections
-    - UnityEngine.Rendering.PostProcessing.Vignette
     Unity.RenderPipelines.Lightweight.Runtime.dll:
     - UnityEngine.Rendering.LWRP.ForwardRendererData
     - UnityEngine.Rendering.LWRP.LightweightRenderPipelineAsset
-    - UnityEngine.Rendering.LWRP.LightweightRenderPipelineEditorResources
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -38,7 +27,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/PrototypeStaging.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -57,45 +46,33 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
-    - Class: 72
-      Script: {instanceID: 0}
     - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9804}
+      Script: {instanceID: 16880}
     - Class: 114
-      Script: {instanceID: 9860}
+      Script: {instanceID: 16886}
     - Class: 114
-      Script: {instanceID: 10014}
+      Script: {instanceID: 18674}
     - Class: 114
-      Script: {instanceID: 10242}
-    - Class: 114
-      Script: {instanceID: 10418}
-    - Class: 114
-      Script: {instanceID: 10472}
-    - Class: 114
-      Script: {instanceID: 11482}
-    - Class: 114
-      Script: {instanceID: 12962}
+      Script: {instanceID: 18762}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
-    - Class: 205
+    - Class: 195
       Script: {instanceID: 0}
-    - Class: 215
-      Script: {instanceID: 0}
-    - Class: 220
-      Script: {instanceID: 0}
-    - Class: 258
+    - Class: 238
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -722,7 +699,49 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 1e6fa9cf03754500cf4be8c8733454d8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UFOController
+  - hash:
+      serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Humans
+    className: Human
+  - hash:
+      serializedVersion: 2
+      Hash: a4bfddf47eafb7cdd94120f94b79b9dc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PatrolPoints
+  - hash:
+      serializedVersion: 2
+      Hash: 2b19be13f00df62e6d4d4f5539bcad51
+    assemblyName: NavMeshComponents.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshModifier
+  - hash:
+      serializedVersion: 2
+      Hash: c8c672fee8a258266e51b55a210b8083
+    assemblyName: NavMeshComponents.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshLink
+  - hash:
+      serializedVersion: 2
+      Hash: 7299a528424874bcf6b5736b5305ac37
+    assemblyName: NavMeshComponents.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshModifierVolume
+  - hash:
+      serializedVersion: 2
+      Hash: 8d4458b476a9a4dd8df843a849fcfffa
+    assemblyName: NavMeshComponents.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshSurface
   platform: 13
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/PrototypeStaging.unity
   playerPath: D:/School/Jaar2/ShowMe/ProjectShowMe/TestBuild.apk
