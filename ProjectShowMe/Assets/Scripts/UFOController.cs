@@ -5,7 +5,7 @@ using UnityEngine;
 public class UFOController : MonoBehaviour
 {
     private List<ITargetable> targets = new List<ITargetable>();
-
+    public float Speed = 5f;
     public GameObject UFO;
     public int ID = 0;
     public float UFOHeight = 6f;
@@ -32,8 +32,8 @@ public class UFOController : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(castPoint, out hit, Mathf.Infinity))
         {
-            UFO.transform.position = new Vector3(hit.point.x, UFOHeight, hit.point.z);
-            
+            Vector3 newPosition = new Vector3(hit.point.x, UFOHeight, hit.point.z);
+            UFO.transform.position = Vector3.Lerp(UFO.transform.position, newPosition, Speed * Time.deltaTime);
         }
     }
 

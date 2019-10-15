@@ -28,7 +28,6 @@ namespace Humans
             if (!Agent)
                 Agent = GetComponent<NavMeshAgent>();
 
-            GetComponent<Renderer>().material.color = Random.ColorHSV();
             randomSpot = Random.Range(0, PatrolPositions.PatrolSpots.Count);
         }
 
