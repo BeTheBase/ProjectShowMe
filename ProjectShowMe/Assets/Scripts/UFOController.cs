@@ -13,6 +13,11 @@ public class UFOController : MonoBehaviour
     public float MaxTimeToAdd = 20f;
     private int maxTargetInventorySpace = 3;
 
+    private void OnEnable()
+    {
+        EventManager<ITargetable>.AddHandler(EVENT.humanDetectEvent, AddTarget);
+    }
+
     private void Update()
     {
         if (UFO == null) return;
@@ -37,20 +42,27 @@ public class UFOController : MonoBehaviour
         Vector3 dir = UFO.transform.TransformDirection(Vector3.down);
         RaycastHit hit;
         Debug.DrawRay(UFO.transform.position, dir * 50, Color.blue);
-        if (Physics.Raycast(UFO.transform.position, dir, out hit, Mathf.Infinity))
+        if (Physics.SphereCast(UFO.transform.position, 3f,dir, out hit, Mathf.Infinity))
         {
             string name = hit.transform.name;
             if (name == "HUMAN")
             {
                 ITargetable targetable = hit.transform.GetComponent<ITargetable>(); ;
                 targetable?.Lock();
-                AddWhenPosible(targetable);
+                //AddWhenPosible(targetable);
             }
             else
             {
                 TimeToAdd = MaxTimeToAdd;
             }
         }
+    }
+
+    public void AddTarget(ITargetable targetable)
+    {
+        if (targetable == null) return;
+        targets.Add(targetable);
+        targetable.Remove();
     }
 
     private void AddWhenPosible(ITargetable targetable)
