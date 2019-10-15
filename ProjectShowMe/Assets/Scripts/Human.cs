@@ -28,6 +28,7 @@ namespace Humans
             if (!Agent)
                 Agent = GetComponent<NavMeshAgent>();
 
+            GetComponent<Renderer>().material.color = Random.ColorHSV();
             randomSpot = Random.Range(0, PatrolPositions.PatrolSpots.Count);
         }
 
@@ -39,8 +40,6 @@ namespace Humans
 
             if (Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(PatrolPositions.PatrolSpots[randomSpot].position.x, 0, PatrolPositions.PatrolSpots[randomSpot].position.z)) > 1f)
             {
-                //animator.transform.position = Vector3.MoveTowards(animator.transform.position, patrol.patrolPoints[randomSpot].position, step);
-                //animator.transform.rotation = Quaternion.LookRotation(newDir);
                 if(Agent.enabled)
                     Agent.SetDestination(PatrolPositions.PatrolSpots[randomSpot].position);
             }
