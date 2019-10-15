@@ -5,6 +5,18 @@ using UnityEngine.AI;
 
 namespace Humans
 {
+    public enum HumanType
+    {
+        Normal = 350,
+        Fat = 300,
+        Strong = 150,
+        Skinny = 80,
+        Small = 60,
+        Cool = 40,
+        Rare = 20,
+        Legendary = 1
+    }
+    
     [RequireComponent(typeof(NavMeshAgent))]
     [RequireComponent(typeof(Rigidbody))]
     public class Human : MonoBehaviour, ITargetable
@@ -18,6 +30,8 @@ namespace Humans
         private NavMeshAgent Agent { get; set; }
 
         private int randomSpot = 0;
+
+        public HumanType HumanType = HumanType.Normal;
 
         private void Start()
         {
@@ -63,6 +77,11 @@ namespace Humans
         public void Remove()
         {
             gameObject.SetActive(false);
+        }
+
+        public HumanType GetHumanType()
+        {
+            return HumanType;
         }
     }
 }
