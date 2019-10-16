@@ -8,6 +8,7 @@ using Humans;
 public interface ITargetable 
 {
     HumanType GetHumanType();
+    void SetHumanType(HumanType humanType);
     void Lock();
     void UnLock();
     void Remove();

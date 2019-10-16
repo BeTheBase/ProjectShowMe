@@ -88,5 +88,10 @@ namespace Humans
         {
             return HumanType;
         }
+
+        public void SetHumanType(HumanType humanType)
+        {
+            HumanType = humanType;
+        }
     }
 }

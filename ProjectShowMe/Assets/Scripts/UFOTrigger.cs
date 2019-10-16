@@ -25,6 +25,7 @@ public class UFOTrigger : MonoBehaviour
                 if (!InRange) return;
                 Debug.Log("We can add now");
                 EventManager<ITargetable>.BroadCast(EVENT.humanDetectEvent, targetable);
+                InRange = false;
             }));
 
             //TO-DO
@@ -35,7 +36,7 @@ public class UFOTrigger : MonoBehaviour
 
         if(other.gameObject.name == "CheckPoint")
         {
-
+            CheckPointManager.Instance.ReachedCheckPoint();
         }
     }
 
@@ -43,6 +44,7 @@ public class UFOTrigger : MonoBehaviour
     {
         if (other.gameObject.name == "HUMAN")
         {
+            StopAllCoroutines();
             InRange = false;
             ITargetable targetable = other.GetComponent<ITargetable>();
             targetable?.UnLock();

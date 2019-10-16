@@ -16,7 +16,7 @@ public class UFOController : MonoBehaviour
     public float UFOHeight = 6f;
     public float TimeToAdd = 20f;
     public float MaxTimeToAdd = 20f;
-    private int maxTargetInventorySpace = 3;
+    private int maxTargetInventorySpace = 2;
 
     private void OnEnable()
     {
@@ -70,6 +70,10 @@ public class UFOController : MonoBehaviour
         {
             targets.Add(targetable);
             targetable.Remove();
+        }
+        else
+        {
+            targets.Clear();
         }
     }
 

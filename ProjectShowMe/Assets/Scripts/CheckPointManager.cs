@@ -8,8 +8,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Humans;
 
-public class CheckPointManager : MonoBehaviour
+public class CheckPointManager : GenericSingleton<CheckPointManager, ICheckPoint>, ICheckPoint
 {
+    private List<HumanType> humanTypes = new List<HumanType>();
+    private bool blendReady = false;
     private void OnEnable()
     {
         //add the blend method to the checkpoint event
@@ -20,8 +22,24 @@ public class CheckPointManager : MonoBehaviour
     /// Blend method where we calculate the satisfaction and broadcast the game update event with that satisfaction
     /// </summary>
     /// <param name="humanTypes">List of humantypes</param>
-    public void Blend(List<HumanType> humanTypes)
+    public void Blend(List<HumanType> _humanTypes)
     {
-        EventManager<int>.BroadCast(EVENT.gameUpdateEvent,Recipes.RecipeChecker(humanTypes));
+        humanTypes = _humanTypes;
+        blendReady = true;
+    }
+
+    public void ReachedCheckPoint()
+    {
+        if (blendReady)
+        {
+            EventManager<int>.BroadCast(EVENT.gameUpdateEvent, Recipes.RecipeChecker(humanTypes));
+            Debug.Log("Feed the baby!");
+            blendReady = false;
+        }
+        else
+        {
+            Debug.Log("Nah that Ain't a recipe yet");
+            return;
+        }
     }
 }
