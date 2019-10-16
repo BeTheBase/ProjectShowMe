@@ -70,9 +70,11 @@ public class UFOController : MonoBehaviour
         {
             targets.Add(targetable);
             targetable.Remove();
+            Debug.Log(targetable);
         }
         else
         {
+            Debug.Log("Reset");
             targets.Clear();
         }
     }

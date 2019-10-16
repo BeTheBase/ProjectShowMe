@@ -14,7 +14,7 @@ public class UFOTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "HUMAN")
+        if(other.gameObject.tag == "HUMAN")
         {
             InRange = true;
             ITargetable targetable = other.gameObject.GetComponent<ITargetable>();
@@ -34,7 +34,7 @@ public class UFOTrigger : MonoBehaviour
             //Dit recept moet bepaalde stats hebben waardoor de baby blij of boos wordt ( meter omhoog met x procent of omlaag met x procent )
         }
 
-        if(other.gameObject.name == "CheckPoint")
+        if(other.gameObject.tag == "CheckPoint")
         {
             CheckPointManager.Instance.ReachedCheckPoint();
         }
@@ -42,7 +42,7 @@ public class UFOTrigger : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.name == "HUMAN")
+        if (other.gameObject.tag == "HUMAN")
         {
             StopAllCoroutines();
             InRange = false;

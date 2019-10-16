@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 862397025878240817}
   - component: {fileID: 862397025878240816}
   - component: {fileID: 862397025878240823}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HUMAN 1
-  m_TagString: Untagged
+  m_TagString: HUMAN
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0113c18a35d241c4ea191d39d6386e5b, type: 2}
+  - {fileID: 2100000, guid: a28960e3812517948a82ec47e10e971b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -38,7 +38,7 @@ namespace Humans
 
         public HumanType HumanType = HumanType.Normal;
 
-        private void Start()
+        private void Awake()
         {
             if (!RBody)
                 RBody = GetComponent<Rigidbody>();
@@ -46,6 +46,11 @@ namespace Humans
                 PatrolPositions = GetComponent<PatrolPoints>();
             if (!Agent)
                 Agent = GetComponent<NavMeshAgent>();
+        }
+
+        private void Start()
+        {
+
 
             randomSpot = Random.Range(0, PatrolPositions.PatrolSpots.Count);
         }
@@ -92,6 +97,11 @@ namespace Humans
         public void SetHumanType(HumanType humanType)
         {
             HumanType = humanType;
+        }
+
+        public void SetPatrolPoints(List<Transform> patrolPoints)
+        {
+            PatrolPositions.PatrolSpots = patrolPoints;
         }
     }
 }

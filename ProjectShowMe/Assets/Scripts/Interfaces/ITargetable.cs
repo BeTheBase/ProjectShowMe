@@ -4,11 +4,14 @@
 // <author>Bas de Koningh</author>
 // <date>10/15/2019 12:50:58 PM </date>
 using Humans;
- 
+using System.Collections.Generic;
+using UnityEngine;
+
 public interface ITargetable 
 {
     HumanType GetHumanType();
     void SetHumanType(HumanType humanType);
+    void SetPatrolPoints(List<Transform> patrolPoints);
     void Lock();
     void UnLock();
     void Remove();

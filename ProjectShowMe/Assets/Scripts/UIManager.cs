@@ -14,6 +14,10 @@ public class UIManager : MonoBehaviour
     /// Bar representation of the happines of the baby
     /// </summary>
     [SerializeField] private Slider babyBar;
+    [SerializeField] private float babyBarLerpSpeed = 2f;
+
+    private bool updateBabyBar = false;
+    private float newValue;
 
     private void OnEnable()
     {
@@ -27,6 +31,15 @@ public class UIManager : MonoBehaviour
     /// <param name="percentage"></param>
     public void UpdateBabyBar(int percentage)
     {
-        babyBar.value += percentage;
+        newValue = babyBar.value + percentage;
+        updateBabyBar = true;
+    }
+
+    private void Update()
+    {
+        if(babyBar.value != babyBar.value + newValue && updateBabyBar)
+        {
+            babyBar.value = Mathf.Lerp(babyBar.value, newValue, babyBarLerpSpeed * Time.deltaTime);
+        }
     }
 }
