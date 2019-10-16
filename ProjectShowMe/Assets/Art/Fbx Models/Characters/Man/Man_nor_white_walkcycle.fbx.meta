@@ -1,41 +1,16 @@
 fileFormatVersion: 2
-guid: 42de6d912caf17b41baa3139f6bdd5ad
+guid: 8b29b5c7bb32f31428e79216b1a7b5fb
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: Walkcycle
+    second: Man_Walkcycle
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert1
-    second: {fileID: 2100000, guid: 0ed1300ecffe30b4ea7c7d2c3c3c96e3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: nor_woman_Arm_L_white1_palette1
-    second: {fileID: 2100000, guid: 0ed1300ecffe30b4ea7c7d2c3c3c96e3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: nor_woman_Arm_R_white1_palette1
-    second: {fileID: 2100000, guid: 0ed1300ecffe30b4ea7c7d2c3c3c96e3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: nor_woman_Head_white1_palette1
-    second: {fileID: 2100000, guid: 0ed1300ecffe30b4ea7c7d2c3c3c96e3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: nor_woman_Leg_L_white1_palette1
-    second: {fileID: 2100000, guid: 0ed1300ecffe30b4ea7c7d2c3c3c96e3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: nor_woman_Leg_R_white1_palette1
     second: {fileID: 2100000, guid: 0ed1300ecffe30b4ea7c7d2c3c3c96e3, type: 2}
   materials:
     importMaterials: 1
@@ -65,11 +40,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Walkcycle
+      name: Man_Walkcycle
       takeName: Take 001
       internalID: 0
-      firstFrame: 0
-      lastFrame: 12
+      firstFrame: 1
+      lastFrame: 13
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -92,7 +67,7 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     isReadable: 0
   meshes:
     lODScreenPercentages: []
