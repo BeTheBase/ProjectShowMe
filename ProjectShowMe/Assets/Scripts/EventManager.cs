@@ -1,9 +1,14 @@
-﻿using System.Collections;
+﻿// <copyright file="EventManager.cs" company="Bas de Koningh BV">
+// Copyright (c) 2019 All Rights Reserved
+// </copyright>
+// <author>Bas de Koningh</author>
+// <date>10/15/2019 12:50:58 PM </date>
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public enum EVENT { humanDetectEvent, gameUpdateEvent, reloadGame, initializeGame, saveGame, selectGame }; // ... Other events
+public enum EVENT { humanDetectEvent, checkPointEvent, gameUpdateEvent, reloadGame, initializeGame, saveGame, selectGame }; // ... Other events
 /// <summary>
 /// Generic event management/ this class is re-usable in every project
 /// </summary>
@@ -26,6 +31,13 @@ public static class EventManager<T>
     public static void BroadCast(EVENT evnt, T c)
     {
         if (genericEventTable[evnt] != null) genericEventTable[evnt](c);
+    }
+
+    //Un-subscribe the action
+    public static void RemoveHandler(EVENT evnt, GenericDelegate<T> action)
+    {
+        if (!genericEventTable.ContainsKey(evnt)) genericEventTable[evnt] = action;
+        else genericEventTable[evnt] -= action;
     }
 
     //Un-Subscribes the listeners to the event

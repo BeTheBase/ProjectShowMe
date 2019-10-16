@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿// <copyright file="UFOController.cs" company="Bas de Koningh BV">
+// Copyright (c) 2019 All Rights Reserved
+// </copyright>
+// <author>Bas de Koningh</author>
+// <date>10/15/2019 12:50:58 PM </date>
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -61,8 +66,11 @@ public class UFOController : MonoBehaviour
     public void AddTarget(ITargetable targetable)
     {
         if (targetable == null) return;
-        targets.Add(targetable);
-        targetable.Remove();
+        if(targets.Count <= maxTargetInventorySpace)
+        {
+            targets.Add(targetable);
+            targetable.Remove();
+        }
     }
 
     private void AddWhenPosible(ITargetable targetable)

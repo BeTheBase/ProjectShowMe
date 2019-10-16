@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IInventory
 {
-    void SetItem(int index);
+    void SetItem(ITargetable targetable);
 }

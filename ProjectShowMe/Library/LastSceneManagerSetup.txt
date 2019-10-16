@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Art station.unity
+- path: Assets/Scenes/PrototypeStaging.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
