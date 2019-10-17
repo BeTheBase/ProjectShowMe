@@ -6,9 +6,11 @@
 using Humans;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public interface ITargetable 
 {
+    Image GetTargetImage();
     HumanType GetHumanType();
     void SetHumanType(HumanType humanType);
     void SetPatrolPoints(List<Transform> patrolPoints);
