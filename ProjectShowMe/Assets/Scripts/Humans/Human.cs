@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 namespace Humans
 {
@@ -51,7 +52,7 @@ namespace Humans
         private void Start()
         {
 
-
+            HumanIcons.Init();
             randomSpot = Random.Range(0, PatrolPositions.PatrolSpots.Count);
         }
 
@@ -102,6 +103,11 @@ namespace Humans
         public void SetPatrolPoints(List<Transform> patrolPoints)
         {
             PatrolPositions.PatrolSpots = patrolPoints;
+        }
+
+        public Image GetTargetImage()
+        {
+            return HumanIcons.GetHumanIcon(HumanType);
         }
     }
 }

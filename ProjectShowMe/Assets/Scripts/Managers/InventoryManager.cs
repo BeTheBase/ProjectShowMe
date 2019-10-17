@@ -31,6 +31,7 @@ public class InventoryManager : GenericSingleton<InventoryManager, IInventory>, 
         if (index < humanInventoryImages.Count)
         {
             humanInventoryImages[index].gameObject.SetActive(true);
+            humanInventoryImages[index] = targetable.GetTargetImage();
             currentHumanTypes.Add(targetable.GetHumanType());
         }
         if (currentHumanTypes.Count == 3)

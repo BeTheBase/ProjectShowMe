@@ -19,6 +19,19 @@ public class MakeScriptableObject
         Selection.activeObject = asset;
     }
 
+    [MenuItem("Assets/Create/HumanIcon")]
+    public static void CreateHumanIcon()
+    {
+        ScriptableIcon asset = ScriptableObject.CreateInstance<ScriptableIcon>();
+
+        AssetDatabase.CreateAsset(asset, "Assets/Resources/NewScriptableObject.asset");
+        AssetDatabase.SaveAssets();
+
+        EditorUtility.FocusProjectWindow();
+
+        Selection.activeObject = asset;
+    }
+
 #endif
 
 }
