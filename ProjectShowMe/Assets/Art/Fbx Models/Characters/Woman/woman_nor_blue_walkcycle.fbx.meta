@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 59726a9f2a8a34349a5653373d38f677
+guid: 42de6d912caf17b41baa3139f6bdd5ad
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: Walkcycle
+    second: Woman_Walkcycle
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -65,7 +65,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Walkcycle
+      name: Woman_Walkcycle
       takeName: Take 001
       internalID: 0
       firstFrame: 0
