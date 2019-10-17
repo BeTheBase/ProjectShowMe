@@ -25,7 +25,11 @@ public static class Recipes
 
     public static int RecipeChecker(List<HumanType> humanTypes)
     {
-        return Combos.Find(c => c.HumanTypes.Equals(humanTypes)).Satisfaction;
+        int currentComboSatisfaction = Combos.Find(c => c.HumanTypes.Equals(humanTypes)).Satisfaction;
+        if (currentComboSatisfaction == 0)
+            return -5;
+        else
+            return currentComboSatisfaction;
         /*
         HumanType humanType0 = humanTypes[0];
         HumanType humanType1 = humanTypes[1];

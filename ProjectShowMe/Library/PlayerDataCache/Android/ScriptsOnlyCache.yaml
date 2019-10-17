@@ -1,5 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - ReadmeEditor
     Assembly-CSharp.dll:
     - CheckPointManager
     - HumanManager
@@ -7,13 +9,12 @@ ScriptsOnlyBuild:
     - InventoryManager
     - MyScriptableObjectClass
     - PatrolPoints
+    - Readme
+    - RecipeManager
+    - ScriptableIcon
     - UFOController
     - UFOTrigger
     - UIManager
-    NavMeshComponents.dll:
-    - UnityEngine.AI.NavMeshSurface
-    NavMeshComponentsEditor.dll:
-    - UnityEditor.AI.NavMeshAssetManager
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -27,14 +28,11 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -45,7 +43,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/PrototypeStaging.unity:
+    Assets/Scenes/LevelBas.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -72,8 +70,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -93,31 +89,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10238}
     - Class: 114
-      Script: {instanceID: 10886}
+      Script: {instanceID: 10270}
     - Class: 114
-      Script: {instanceID: 10982}
+      Script: {instanceID: 10896}
     - Class: 114
-      Script: {instanceID: 11130}
+      Script: {instanceID: 10992}
     - Class: 114
-      Script: {instanceID: 11318}
+      Script: {instanceID: 11140}
     - Class: 114
-      Script: {instanceID: 11336}
+      Script: {instanceID: 11328}
     - Class: 114
-      Script: {instanceID: 11866}
+      Script: {instanceID: 11346}
     - Class: 114
-      Script: {instanceID: 11994}
+      Script: {instanceID: 11874}
     - Class: 114
-      Script: {instanceID: 12084}
+      Script: {instanceID: 12004}
     - Class: 114
-      Script: {instanceID: 12086}
+      Script: {instanceID: 12094}
     - Class: 114
-      Script: {instanceID: 12486}
+      Script: {instanceID: 12096}
     - Class: 114
-      Script: {instanceID: 12546}
+      Script: {instanceID: 12204}
     - Class: 114
-      Script: {instanceID: 13230}
+      Script: {instanceID: 12560}
     - Class: 114
-      Script: {instanceID: 13282}
+      Script: {instanceID: 13238}
+    - Class: 114
+      Script: {instanceID: 13290}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -126,11 +124,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
+    - Class: 154
+      Script: {instanceID: 0}
+    - Class: 156
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 195
       Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 218
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -139,6 +145,8 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 238
+      Script: {instanceID: 0}
+    - Class: 1953259897
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -297,6 +305,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: DepthOfField
+  - hash:
+      serializedVersion: 2
+      Hash: eee3e9b7c5fc06b32dc7636f38e52654
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScriptableIcon
   - hash:
       serializedVersion: 2
       Hash: 9e70ecf91466f07d9bd649be625cae52
@@ -599,6 +613,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 798f6bb262fe2c448abf66d85faa609c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: triggerForce
+  - hash:
+      serializedVersion: 2
       Hash: 28e656df8bb4839995ae06c8ad628ce4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -651,6 +671,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 07923f6f0b7babed4c0edf4c68aa151c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RecipeManager
   - hash:
       serializedVersion: 2
       Hash: a64b8ff703a69f3352c424e9d0bc1c49
@@ -851,5 +877,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Scenes/PrototypeStaging.unity
-  playerPath: D:/School/Jaar2/ShowMe/ProjectShowMe/TestBuildV1.apk
+  - Assets/Scenes/LevelBas.unity
+  playerPath: D:/School/Jaar2/ShowMe/ProjectShowMe/TestBuildV101.apk
