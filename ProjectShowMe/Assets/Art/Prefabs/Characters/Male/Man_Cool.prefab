@@ -435,6 +435,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5982920633730145804}
   - component: {fileID: 5982920633730145805}
+  - component: {fileID: 7097583460719350645}
   m_Layer: 0
   m_Name: Man_Nor
   m_TagString: Untagged
@@ -476,6 +477,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &7097583460719350645
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5982920633730145807}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: de85ca09f723110438fde60a7b8081de, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: de85ca09f723110438fde60a7b8081de, type: 2}
+  - {fileID: 7400000, guid: d4631edfe1cfbca4db4dcd599a759843, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &5982920633921988049
 GameObject:
   m_ObjectHideFlags: 0

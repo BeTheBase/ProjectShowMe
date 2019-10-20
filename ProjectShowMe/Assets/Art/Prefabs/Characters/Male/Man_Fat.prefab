@@ -995,6 +995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9068140574736717878}
   - component: {fileID: 9068140574736717879}
+  - component: {fileID: 1298637328291480281}
   m_Layer: 0
   m_Name: Man_Fat
   m_TagString: Untagged
@@ -1037,6 +1038,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &1298637328291480281
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9068140574736717877}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 61729327699a87046b86d698a49beb6e, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 61729327699a87046b86d698a49beb6e, type: 2}
+  - {fileID: 7400000, guid: 0813d4df5d5d2204aaa416354d873deb, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &9068140575145137873
 GameObject:
   m_ObjectHideFlags: 0
