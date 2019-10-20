@@ -956,6 +956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5957908271710228503}
   - component: {fileID: 5957908271710228502}
+  - component: {fileID: 3081286259728064047}
   m_Layer: 0
   m_Name: Man_Legendary
   m_TagString: Untagged
@@ -997,6 +998,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &3081286259728064047
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5957908271710228500}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: a298d3788d92d664eb16927935815103, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: a298d3788d92d664eb16927935815103, type: 2}
+  - {fileID: 7400000, guid: d203b8fd14404dc47b01f84ab4c1b5c6, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &5957908271998927585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,7 +1057,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5957908272720044941}
   m_Layer: 0
-  m_Name: Man_Legendary 1
+  m_Name: Man_Legendary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
