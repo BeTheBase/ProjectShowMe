@@ -6,6 +6,7 @@ using System.Linq;
 
 public static class Recipes 
 {
+    public static List<RecipeCombo> Combos;
     public static int satisfactionLevel0 = 5;
     public static int satisfactionLevel1 = 10;
     public static int satisfactionLevel2 = 15;
@@ -24,6 +25,12 @@ public static class Recipes
 
     public static int RecipeChecker(List<HumanType> humanTypes)
     {
+        int currentComboSatisfaction = Combos.Find(c => c.HumanTypes.Equals(humanTypes)).Satisfaction;
+        if (currentComboSatisfaction == 0)
+            return -5;
+        else
+            return currentComboSatisfaction;
+        /*
         HumanType humanType0 = humanTypes[0];
         HumanType humanType1 = humanTypes[1];
         HumanType humanType2 = humanTypes[2];
@@ -48,7 +55,7 @@ public static class Recipes
                 return satisfactionLevel14;
             default:
                 return satisfactionLevel0;
-        }
+        }*/
     }
 
     private static HumanType CheckSame(List<HumanType> humanTypes)

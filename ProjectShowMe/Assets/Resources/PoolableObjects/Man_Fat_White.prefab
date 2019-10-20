@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7639333080819143031}
   - component: {fileID: 7639333080819143028}
   - component: {fileID: 7639333080819142984}
+  - component: {fileID: -7588704807844405785}
   m_Layer: 9
   m_Name: Man_Fat_White
   m_TagString: HUMAN
@@ -162,3 +163,22 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0.475, z: -0.024999999}
+--- !u!95 &-7588704807844405785
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3894743342892366480}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5076731ff335fea40a3aece1e6878ada, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
