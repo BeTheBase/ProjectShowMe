@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1174943950756391929}
   m_Layer: 0
-  m_Name: Mothership (Clean) 1
+  m_Name: )_Mothership
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 6384142610704098614}
   - component: {fileID: 1281449242091296189}
   m_Layer: 0
-  m_Name: Mothership_BottomLight:Mesh
+  m_Name: Mothership_BottomLight:Mesh DELETE???
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
