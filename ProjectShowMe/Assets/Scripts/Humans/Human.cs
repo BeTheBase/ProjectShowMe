@@ -109,5 +109,10 @@ namespace Humans
         {
             return HumanIcons.GetHumanIcon(HumanType);
         }
+
+        public void BeemHuman(Transform position, float speed)
+        {
+            transform.LerpTransform(this, position.position, speed);
+        }
     }
 }

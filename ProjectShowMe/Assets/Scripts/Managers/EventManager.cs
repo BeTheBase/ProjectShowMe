@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public enum EVENT { humanDetectEvent, checkPointEvent, gameUpdateEvent, reloadGame, initializeGame, saveGame, selectGame }; // ... Other events
+public enum EVENT { humanDetectEvent, checkPointEvent, managerDataSavedEvent, recipeManagerSaved, recipeManagerLoad, managerLoadEvent, gameUpdateEvent, reloadGame, initializeGame, saveGame, selectGame }; // ... Other events
 /// <summary>
 /// Generic event management/ this class is re-usable in every project
 /// </summary>

@@ -1,0 +1,64 @@
+{
+    "Items": [
+        {
+            "amount": 5,
+            "humanType": 300,
+            "prefab": {
+                "instanceID": 16046
+            },
+            "patrolPoints": [
+                {
+                    "instanceID": 22438
+                },
+                {
+                    "instanceID": 21902
+                },
+                {
+                    "instanceID": 21996
+                },
+                {
+                    "instanceID": 22016
+                },
+                {
+                    "instanceID": 21870
+                },
+                {
+                    "instanceID": 21972
+                },
+                {
+                    "instanceID": 22288
+                }
+            ]
+        },
+        {
+            "amount": 5,
+            "humanType": 350,
+            "prefab": {
+                "instanceID": 20726
+            },
+            "patrolPoints": [
+                {
+                    "instanceID": 22438
+                },
+                {
+                    "instanceID": 21902
+                },
+                {
+                    "instanceID": 21996
+                },
+                {
+                    "instanceID": 22016
+                },
+                {
+                    "instanceID": 21870
+                },
+                {
+                    "instanceID": 21972
+                },
+                {
+                    "instanceID": 22288
+                }
+            ]
+        }
+    ]
+}

@@ -27,7 +27,6 @@ public class UFOController : MonoBehaviour
     {
         if (UFO == null) return;
         MoveUFO();
-        Beem();
     }
 
     private void MoveUFO()
@@ -69,7 +68,11 @@ public class UFOController : MonoBehaviour
         if(targets.Count <= maxTargetInventorySpace)
         {
             targets.Add(targetable);
-            targetable.Remove();
+            targetable.BeemHuman(UFO.transform, Speed);
+            StartCoroutine(Timer.Start(TimeToAdd, false, ()=>
+            {
+                targetable.Remove();
+            }));
             Debug.Log(targetable);
         }
         else

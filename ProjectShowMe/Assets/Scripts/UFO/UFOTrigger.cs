@@ -29,9 +29,8 @@ public class UFOTrigger : MonoBehaviour
             }));
 
             //TO-DO
-            //Als er een HUMAN wordt opgezogen door de UFO dan is het belangrijk om het type van die HUMAN op te slaan
-            //Als de inventory van HUMANS vol zit dan moet er als er naar het checkpoint in de game is gegaan een recept worden geblend.
-            //Dit recept moet bepaalde stats hebben waardoor de baby blij of boos wordt ( meter omhoog met x procent of omlaag met x procent )
+            //Als de trigger op meerdere humans tegelijk staat moet hij alleen de eerste human pakken 
+            //De human moet dan omhoog lerpen naar de ufo en dan verdwijnen
         }
 
         if(other.gameObject.tag == "CheckPoint")
