@@ -34,7 +34,7 @@ public class InventoryManager : GenericSingleton<InventoryManager, IInventory>, 
             //humanInventoryImages[index] = targetable.GetTargetImage();
             currentHumanTypes.Add(targetable.GetHumanType());
         }
-        if (currentHumanTypes.Count == 3)
+        if (currentHumanTypes.Count >= 3)
         {
             EventManager<List<HumanType>>.BroadCast(EVENT.checkPointEvent, currentHumanTypes);
         }
