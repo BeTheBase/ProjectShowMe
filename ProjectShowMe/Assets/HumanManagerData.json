@@ -4,29 +4,29 @@
             "amount": 5,
             "humanType": 300,
             "prefab": {
-                "instanceID": 16046
+                "instanceID": 61860
             },
             "patrolPoints": [
                 {
-                    "instanceID": 22438
+                    "instanceID": 67804
                 },
                 {
-                    "instanceID": 21902
+                    "instanceID": 67800
                 },
                 {
-                    "instanceID": 21996
+                    "instanceID": 67966
                 },
                 {
-                    "instanceID": 22016
+                    "instanceID": 67922
                 },
                 {
-                    "instanceID": 21870
+                    "instanceID": 67934
                 },
                 {
-                    "instanceID": 21972
+                    "instanceID": 68152
                 },
                 {
-                    "instanceID": 22288
+                    "instanceID": 67700
                 }
             ]
         },
@@ -34,29 +34,209 @@
             "amount": 5,
             "humanType": 350,
             "prefab": {
-                "instanceID": 20726
+                "instanceID": 65326
             },
             "patrolPoints": [
                 {
-                    "instanceID": 22438
+                    "instanceID": 67804
                 },
                 {
-                    "instanceID": 21902
+                    "instanceID": 67800
                 },
                 {
-                    "instanceID": 21996
+                    "instanceID": 67966
                 },
                 {
-                    "instanceID": 22016
+                    "instanceID": 67922
                 },
                 {
-                    "instanceID": 21870
+                    "instanceID": 67934
                 },
                 {
-                    "instanceID": 21972
+                    "instanceID": 68152
                 },
                 {
-                    "instanceID": 22288
+                    "instanceID": 67700
+                }
+            ]
+        },
+        {
+            "amount": 5,
+            "humanType": 150,
+            "prefab": {
+                "instanceID": 61760
+            },
+            "patrolPoints": [
+                {
+                    "instanceID": 67804
+                },
+                {
+                    "instanceID": 67800
+                },
+                {
+                    "instanceID": 67966
+                },
+                {
+                    "instanceID": 67922
+                },
+                {
+                    "instanceID": 67934
+                },
+                {
+                    "instanceID": 68152
+                },
+                {
+                    "instanceID": 67700
+                }
+            ]
+        },
+        {
+            "amount": 5,
+            "humanType": 80,
+            "prefab": {
+                "instanceID": 65312
+            },
+            "patrolPoints": [
+                {
+                    "instanceID": 67804
+                },
+                {
+                    "instanceID": 67800
+                },
+                {
+                    "instanceID": 67966
+                },
+                {
+                    "instanceID": 67922
+                },
+                {
+                    "instanceID": 67934
+                },
+                {
+                    "instanceID": 68152
+                },
+                {
+                    "instanceID": 67700
+                }
+            ]
+        },
+        {
+            "amount": 5,
+            "humanType": 60,
+            "prefab": {
+                "instanceID": 62452
+            },
+            "patrolPoints": [
+                {
+                    "instanceID": 67804
+                },
+                {
+                    "instanceID": 67800
+                },
+                {
+                    "instanceID": 67966
+                },
+                {
+                    "instanceID": 67922
+                },
+                {
+                    "instanceID": 67934
+                },
+                {
+                    "instanceID": 68152
+                },
+                {
+                    "instanceID": 67700
+                }
+            ]
+        },
+        {
+            "amount": 5,
+            "humanType": 40,
+            "prefab": {
+                "instanceID": 62962
+            },
+            "patrolPoints": [
+                {
+                    "instanceID": 67804
+                },
+                {
+                    "instanceID": 67800
+                },
+                {
+                    "instanceID": 67966
+                },
+                {
+                    "instanceID": 67922
+                },
+                {
+                    "instanceID": 67934
+                },
+                {
+                    "instanceID": 68152
+                },
+                {
+                    "instanceID": 67700
+                }
+            ]
+        },
+        {
+            "amount": 5,
+            "humanType": 20,
+            "prefab": {
+                "instanceID": 63304
+            },
+            "patrolPoints": [
+                {
+                    "instanceID": 67804
+                },
+                {
+                    "instanceID": 67800
+                },
+                {
+                    "instanceID": 67966
+                },
+                {
+                    "instanceID": 67922
+                },
+                {
+                    "instanceID": 67934
+                },
+                {
+                    "instanceID": 68152
+                },
+                {
+                    "instanceID": 67700
+                }
+            ]
+        },
+        {
+            "amount": 1,
+            "humanType": 1,
+            "prefab": {
+                "instanceID": 64762
+            },
+            "patrolPoints": [
+                {
+                    "instanceID": 67804
+                },
+                {
+                    "instanceID": 67800
+                },
+                {
+                    "instanceID": 67966
+                },
+                {
+                    "instanceID": 67922
+                },
+                {
+                    "instanceID": 67934
+                },
+                {
+                    "instanceID": 68152
+                },
+                {
+                    "instanceID": 67700
                 }
             ]
         }
