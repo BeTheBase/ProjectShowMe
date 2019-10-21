@@ -1,0 +1,28 @@
+{
+    "Items": [
+        {
+            "humanTypes": [
+                350,
+                350,
+                350
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                300,
+                300,
+                300
+            ],
+            "satisfaction": -5
+        },
+        {
+            "humanTypes": [
+                350,
+                350,
+                300
+            ],
+            "satisfaction": 5
+        }
+    ]
+}

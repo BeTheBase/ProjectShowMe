@@ -8,9 +8,19 @@ public class HumanManager : MonoBehaviour
     [SerializeField] private List<HumanData> humans;
     [SerializeField] private List<Transform> spawnAreas;
 
+    [SerializeField] public string jsonString;
+
+    private void OnEnable()
+    {
+        EventManager<string>.AddHandler(EVENT.managerDataSavedEvent, SaveManagerData);
+        EventManager<string>.AddHandler(EVENT.managerLoadEvent, LoadManagerData);
+    }
+
     private void Start()
     {
-        for(int spawnIndex = 0; spawnIndex < spawnAreas.Count; spawnIndex++)
+        humans = JsonConverter<HumanData>.FromJson(jsonString, "/HumanManagerData.json");
+
+        for (int spawnIndex = 0; spawnIndex < spawnAreas.Count; spawnIndex++)
         {
             foreach(HumanData hData in humans)
             {
@@ -20,6 +30,17 @@ public class HumanManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void SaveManagerData(string j)
+    {
+        jsonString = JsonConverter<HumanData>.SerializeToJson(humans, jsonString, "/HumanManagerData.json");
+        Debug.Log(jsonString);
+    }
+
+    public void LoadManagerData(string j)
+    {
+        humans = JsonConverter<HumanData>.FromJson(jsonString, "/HumanManagerData.json");
     }
 
     private void Spawn(GameObject prefab, Vector3 position, Quaternion rotation, HumanType humanType, List<Transform> patrolPoints)

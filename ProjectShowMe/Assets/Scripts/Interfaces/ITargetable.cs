@@ -12,6 +12,7 @@ public interface ITargetable
 {
     Image GetTargetImage();
     HumanType GetHumanType();
+    void BeemHuman(Transform position,float speed);
     void SetHumanType(HumanType humanType);
     void SetPatrolPoints(List<Transform> patrolPoints);
     void Lock();
