@@ -32,7 +32,6 @@ public class UFOTrigger : MonoBehaviour
             //Als de trigger op meerdere humans tegelijk staat moet hij alleen de eerste human pakken 
             //De human moet dan omhoog lerpen naar de ufo en dan verdwijnen
         }
-
         if(other.gameObject.tag == "CheckPoint")
         {
             CheckPointManager.Instance.ReachedCheckPoint();

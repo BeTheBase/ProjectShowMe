@@ -18,7 +18,7 @@ public class HumanManager : MonoBehaviour
 
     private void Start()
     {
-        humans = JsonConverter<HumanData>.FromJson(jsonString, "/HumanManagerData.json");
+        //humans = JsonConverter<HumanData>.FromJson(jsonString, "/HumanManagerData.json");
 
         for (int spawnIndex = 0; spawnIndex < spawnAreas.Count; spawnIndex++)
         {
