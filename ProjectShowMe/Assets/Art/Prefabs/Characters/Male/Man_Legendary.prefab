@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 998727550850232883}
   - component: {fileID: 548579205858076384}
   - component: {fileID: 9132828528973924880}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pants_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1506563963205150227}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Arm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 158085287541906775}
   - component: {fileID: 608374286270482820}
   - component: {fileID: 8166086027727807860}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hand_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 3092588874802765473}
   - component: {fileID: 2354210223485700722}
   - component: {fileID: 6451819268150929026}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sleeve_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 4214094772301725276}
   - component: {fileID: 3475574215465970319}
   - component: {fileID: 5267270500648109695}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HatGold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 4055912749621888976}
   - component: {fileID: 3605623687760581379}
   - component: {fileID: 5416455320881430515}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sleeve_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 4139469248982201142}
   - component: {fileID: 3689180173195306981}
   - component: {fileID: 5336830545985080085}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BodyWhite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +512,7 @@ GameObject:
   - component: {fileID: 3464071327761676829}
   - component: {fileID: 4202450054023048910}
   - component: {fileID: 4859587159817978430}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BodyGold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,7 +590,7 @@ GameObject:
   - component: {fileID: 5639421416827107923}
   - component: {fileID: 4901041666199219840}
   - component: {fileID: 4404904873383690864}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Feet_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -668,7 +668,7 @@ GameObject:
   - component: {fileID: 5552189821620124831}
   - component: {fileID: 5137929541677754444}
   - component: {fileID: 4498873356991153340}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Staff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,7 +746,7 @@ GameObject:
   - component: {fileID: 4951673940171228545}
   - component: {fileID: 5690053750928167250}
   - component: {fileID: 4023266376644738466}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -822,7 +822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5957908270720748798}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -854,7 +854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5957908270870084178}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Leg_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -886,7 +886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5957908270964747213}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -918,7 +918,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5957908271297617651}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -957,7 +957,7 @@ GameObject:
   - component: {fileID: 5957908271710228503}
   - component: {fileID: 5957908271710228502}
   - component: {fileID: 3081286259728064047}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Man_Legendary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1024,7 +1024,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5957908271998927584}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Leg_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1056,9 +1056,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5957908272720044941}
-  m_Layer: 0
+  - component: {fileID: 4141146103826455474}
+  - component: {fileID: 1283717771433837699}
+  - component: {fileID: 2993942636267479681}
+  - component: {fileID: 337412279224187172}
+  - component: {fileID: 5550122162641874252}
+  m_Layer: 9
   m_Name: Man_Legendary
-  m_TagString: Untagged
+  m_TagString: HUMAN
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1078,6 +1083,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4141146103826455474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5957908272720044938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d910e76b5d57a04cb18779a4f894538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolSpots: []
+--- !u!195 &1283717771433837699
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5957908272720044938}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!54 &2993942636267479681
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5957908272720044938}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &337412279224187172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5957908272720044938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c586560be439b34f82362ce1c5c70dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  HumanType: 1
+--- !u!136 &5550122162641874252
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5957908272720044938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &7031500506571703500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,7 +1173,7 @@ GameObject:
   - component: {fileID: 8047128572219080826}
   - component: {fileID: 7344777560611820713}
   - component: {fileID: 2075955536437344345}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HatWhite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1167,7 +1251,7 @@ GameObject:
   - component: {fileID: 7386961026508122195}
   - component: {fileID: 7837109295181151360}
   - component: {fileID: 1576721289818820720}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Feet_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1245,7 +1329,7 @@ GameObject:
   - component: {fileID: 6925168394029156330}
   - component: {fileID: 7663969318796399417}
   - component: {fileID: 1403225000789901257}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1321,7 +1405,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7923562848225324861}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Arm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1355,7 +1439,7 @@ GameObject:
   - component: {fileID: 8485755750685899751}
   - component: {fileID: 9188387151867850548}
   - component: {fileID: 477689045355709380}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pants_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
