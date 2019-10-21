@@ -487,7 +487,7 @@ MonoBehaviour:
   humans:
   - amount: 5
     humanType: 300
-    prefab: {fileID: 3894743342892366480, guid: ced6ca528c5197e4f808f505dbed6354,
+    prefab: {fileID: 9068140573857000363, guid: 7fdd5611c905b574ba8fcaff59b548a3,
       type: 3}
     patrolPoints:
     - {fileID: 601660344}
@@ -499,7 +499,79 @@ MonoBehaviour:
     - {fileID: 226675051}
   - amount: 5
     humanType: 350
-    prefab: {fileID: 5857238755614238198, guid: 201eaedd32d2f2d4491951adf00ffdfc,
+    prefab: {fileID: 8015398299006801973, guid: 6040903ef5a87da42a933bd7af7c7256,
+      type: 3}
+    patrolPoints:
+    - {fileID: 601660344}
+    - {fileID: 599716849}
+    - {fileID: 1273610588}
+    - {fileID: 1122697725}
+    - {fileID: 1163482347}
+    - {fileID: 2067958190}
+    - {fileID: 226675051}
+  - amount: 5
+    humanType: 150
+    prefab: {fileID: 3595635081923971463, guid: 6c02d5807bf47304da828b789d323ef9,
+      type: 3}
+    patrolPoints:
+    - {fileID: 601660344}
+    - {fileID: 599716849}
+    - {fileID: 1273610588}
+    - {fileID: 1122697725}
+    - {fileID: 1163482347}
+    - {fileID: 2067958190}
+    - {fileID: 226675051}
+  - amount: 5
+    humanType: 80
+    prefab: {fileID: 5827935404985243496, guid: 988ec42e47966994b9be5c8962664fdc,
+      type: 3}
+    patrolPoints:
+    - {fileID: 601660344}
+    - {fileID: 599716849}
+    - {fileID: 1273610588}
+    - {fileID: 1122697725}
+    - {fileID: 1163482347}
+    - {fileID: 2067958190}
+    - {fileID: 226675051}
+  - amount: 5
+    humanType: 60
+    prefab: {fileID: 8535784924919005636, guid: 8c2feb634d75e6247954c846dad6ca66,
+      type: 3}
+    patrolPoints:
+    - {fileID: 601660344}
+    - {fileID: 599716849}
+    - {fileID: 1273610588}
+    - {fileID: 1122697725}
+    - {fileID: 1163482347}
+    - {fileID: 2067958190}
+    - {fileID: 226675051}
+  - amount: 5
+    humanType: 40
+    prefab: {fileID: 5982920634867887505, guid: 6d9ea8850b404e749a55da5fe4d9ec1f,
+      type: 3}
+    patrolPoints:
+    - {fileID: 601660344}
+    - {fileID: 599716849}
+    - {fileID: 1273610588}
+    - {fileID: 1122697725}
+    - {fileID: 1163482347}
+    - {fileID: 2067958190}
+    - {fileID: 226675051}
+  - amount: 5
+    humanType: 20
+    prefab: {fileID: 1152089087528381836, guid: 9c5b6ec6d2a97a64a851728abd049eb6,
+      type: 3}
+    patrolPoints:
+    - {fileID: 601660344}
+    - {fileID: 599716849}
+    - {fileID: 1273610588}
+    - {fileID: 1122697725}
+    - {fileID: 1163482347}
+    - {fileID: 2067958190}
+    - {fileID: 226675051}
+  - amount: 1
+    humanType: 1
+    prefab: {fileID: 5957908272720044938, guid: 8857f6dbf5e38e94284b35767c41d4ba,
       type: 3}
     patrolPoints:
     - {fileID: 601660344}
@@ -513,6 +585,7 @@ MonoBehaviour:
   - {fileID: 601660344}
   - {fileID: 1163482347}
   - {fileID: 1273610588}
+  jsonString: 
 --- !u!114 &91951471
 MonoBehaviour:
   m_ObjectHideFlags: 0

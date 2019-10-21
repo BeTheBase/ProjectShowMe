@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3239762373011248100}
   - component: {fileID: 2789190783939888951}
   - component: {fileID: 6888133533535742919}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pants_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 2490843899689046373}
   - component: {fileID: 2941274828582077878}
   - component: {fileID: 5905102117302151494}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 4148501844362102885}
   - component: {fileID: 3734241626563108022}
   - component: {fileID: 5399835951266017350}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 3627169606033417369}
   - component: {fileID: 4041570555851436106}
   - component: {fileID: 4698426253251615930}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 3621791430224647851}
   - component: {fileID: 4036334218200793720}
   - component: {fileID: 4693122856127671944}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 4640233662680638859}
   - component: {fileID: 5342864985463157080}
   - component: {fileID: 3676918258687679912}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Feet_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 8009539421592170802}
   - component: {fileID: 7306906918733866465}
   - component: {fileID: 2037311381675739409}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pants_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,9 +555,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8015398299006801970}
-  m_Layer: 0
+  - component: {fileID: 6060734494492900107}
+  - component: {fileID: 8942599162829579460}
+  - component: {fileID: 5063957972297770324}
+  - component: {fileID: 6163774903953151112}
+  - component: {fileID: 6265381717949229204}
+  m_Layer: 9
   m_Name: Man_Normal
-  m_TagString: Untagged
+  m_TagString: HUMAN
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -577,6 +582,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &6060734494492900107
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8015398299006801973}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!54 &8942599162829579460
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8015398299006801973}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!195 &5063957972297770324
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8015398299006801973}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &6163774903953151112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8015398299006801973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c586560be439b34f82362ce1c5c70dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  HumanType: 350
+--- !u!114 &6265381717949229204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8015398299006801973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d910e76b5d57a04cb18779a4f894538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolSpots: []
 --- !u!1 &8015398299158673758
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,7 +670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8015398299158673759}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Leg_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8015398299874534732}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +739,7 @@ GameObject:
   - component: {fileID: 8015398300018715560}
   - component: {fileID: 8015398300018715561}
   - component: {fileID: 5515066728179186372}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Man_Nor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -723,7 +807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8015398300212777074}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -754,7 +838,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8015398300319891949}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Leg_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -786,7 +870,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8015398300438558529}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -819,7 +903,7 @@ GameObject:
   - component: {fileID: 8111659315613157752}
   - component: {fileID: 8850320525144661419}
   - component: {fileID: 283732726023319899}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Feet_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
