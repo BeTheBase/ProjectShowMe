@@ -7,7 +7,7 @@ public class HumanManager : MonoBehaviour
 {
     [SerializeField] private List<HumanData> humans;
     [SerializeField] private List<Transform> spawnAreas;
-
+    [SerializeField] private int maxHumans;
     [SerializeField] public string jsonString;
 
     private void OnEnable()
@@ -19,15 +19,12 @@ public class HumanManager : MonoBehaviour
     private void Start()
     {
         //humans = JsonConverter<HumanData>.FromJson(jsonString, "/HumanManagerData.json");
-
-        for (int spawnIndex = 0; spawnIndex < spawnAreas.Count; spawnIndex++)
+        for (int humanAmount = 0; humanAmount < maxHumans; humanAmount++)
         {
-            foreach(HumanData hData in humans)
+            foreach (HumanData hData in humans)
             {
-                for (int humanAmount = 0; humanAmount < hData.amount; humanAmount++)
-                {
-                    Spawn(hData.prefab, spawnAreas[spawnIndex].position, Quaternion.identity, hData.humanType, hData.patrolPoints );
-                }
+                if(Random.value > hData.percentage)
+                    Spawn(hData.prefab, spawnAreas[Random.Range(0, spawnAreas.Count)].position, Quaternion.identity, hData.humanType, hData.patrolPoints);
             }
         }
     }

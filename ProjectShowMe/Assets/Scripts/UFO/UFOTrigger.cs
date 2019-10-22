@@ -14,23 +14,27 @@ public class UFOTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "HUMAN")
+        if (!InRange)
         {
-            InRange = true;
-            ITargetable targetable = other.gameObject.GetComponent<ITargetable>();
-            targetable?.Lock();
-            StartCoroutine(Timer.Start(TimeToAdd, false, () =>
+            if (other.gameObject.tag == "HUMAN")
             {
-                // Do something at the end of the timer
-                if (!InRange) return;
-                Debug.Log("We can add now");
-                EventManager<ITargetable>.BroadCast(EVENT.humanDetectEvent, targetable);
-                InRange = false;
-            }));
+                InRange = true;
+                ITargetable targetable = other.gameObject.GetComponent<ITargetable>();
+                targetable?.Lock();
+                StartCoroutine(Timer.Start(TimeToAdd, false, () =>
+                {
+                    // Do something at the end of the timer
+                    if (!InRange) return;
+                    Debug.Log("We can add now");
+                    EventManager<ITargetable>.BroadCast(EVENT.humanDetectEvent, targetable);
+                    TimeToAdd = 2f;
+                    InRange = false;
+                }));
 
-            //TO-DO
-            //Als de trigger op meerdere humans tegelijk staat moet hij alleen de eerste human pakken 
-            //De human moet dan omhoog lerpen naar de ufo en dan verdwijnen
+                //TO-DO
+                //Als de trigger op meerdere humans tegelijk staat moet hij alleen de eerste human pakken 
+                //De human moet dan omhoog lerpen naar de ufo en dan verdwijnen
+            }
         }
         if(other.gameObject.tag == "CheckPoint")
         {
@@ -40,12 +44,15 @@ public class UFOTrigger : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "HUMAN")
+        if (InRange)
         {
-            StopAllCoroutines();
-            InRange = false;
-            ITargetable targetable = other.GetComponent<ITargetable>();
-            targetable?.UnLock();
+            if (other.gameObject.tag == "HUMAN")
+            {
+                StopAllCoroutines();
+                InRange = false;
+                ITargetable targetable = other.GetComponent<ITargetable>();
+                targetable?.UnLock();
+            }
         }
     }
 }

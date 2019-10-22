@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe679902cdbccd040b1dc9b1f401e698, type: 3}
-  m_Name: HumanIconFat
+  m_Name: HumanIconCool
   m_EditorClassIdentifier: 
-  humanType: 300
-  humanIcon: {fileID: 21300000, guid: 43f622feced7e4e4abeb5b2d484ff235, type: 3}
+  humanType: 40
+  humanIcon: {fileID: 21300000, guid: 7562ac53c0fa08848994bbbbdc8318a7, type: 3}

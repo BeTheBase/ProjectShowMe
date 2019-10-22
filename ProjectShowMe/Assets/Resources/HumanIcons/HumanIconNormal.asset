@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: HumanIconNormal
   m_EditorClassIdentifier: 
   humanType: 350
-  humanIcon: {fileID: 0}
+  humanIcon: {fileID: 21300000, guid: ae3f0e6fd00a3f14aabacfaff9e691ac, type: 3}

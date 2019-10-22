@@ -10,4 +10,5 @@ public struct HumanData
     [SerializeField] public HumanType humanType;
     [SerializeField] public GameObject prefab;
     [SerializeField] public List<Transform> patrolPoints;
+    [SerializeField] public float percentage;
 }

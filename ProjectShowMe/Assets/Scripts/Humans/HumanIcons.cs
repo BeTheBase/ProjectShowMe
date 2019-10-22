@@ -18,9 +18,9 @@ public static class HumanIcons
         }
     }
 
-    public static Image GetHumanIcon(HumanType humanType)
+    public static Sprite GetHumanIcon(HumanType humanType)
     {
-        Image icon = allIcons.Find(ahi => ahi.HumanType.Equals(humanType)).HumanIcon;
+        Sprite icon = allIcons.Find(ahi => ahi.HumanType.Equals(humanType)).HumanIcon;
         return icon == null ? null : icon;
     }
 }
