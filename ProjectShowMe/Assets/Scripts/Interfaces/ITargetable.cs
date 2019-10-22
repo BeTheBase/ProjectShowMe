@@ -10,7 +10,7 @@ using UnityEngine.UI;
 
 public interface ITargetable 
 {
-    Image GetTargetImage();
+    Sprite GetTargetImage();
     HumanType GetHumanType();
     void BeemHuman(Transform position,float speed);
     void SetHumanType(HumanType humanType);

@@ -406,6 +406,7 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.8
   - amount: 5
     humanType: 350
     prefab: {fileID: 8015398299006801973, guid: 6040903ef5a87da42a933bd7af7c7256,
@@ -418,6 +419,7 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.85
   - amount: 5
     humanType: 150
     prefab: {fileID: 3595635081923971463, guid: 6c02d5807bf47304da828b789d323ef9,
@@ -430,6 +432,7 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.7
   - amount: 5
     humanType: 80
     prefab: {fileID: 5827935404985243496, guid: 988ec42e47966994b9be5c8962664fdc,
@@ -442,6 +445,7 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.65
   - amount: 5
     humanType: 60
     prefab: {fileID: 8535784924919005636, guid: 8c2feb634d75e6247954c846dad6ca66,
@@ -454,6 +458,7 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.6
   - amount: 5
     humanType: 40
     prefab: {fileID: 5982920634867887505, guid: 6d9ea8850b404e749a55da5fe4d9ec1f,
@@ -466,6 +471,7 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.5
   - amount: 5
     humanType: 20
     prefab: {fileID: 1152089087528381836, guid: 9c5b6ec6d2a97a64a851728abd049eb6,
@@ -478,6 +484,7 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.2
   - amount: 1
     humanType: 1
     prefab: {fileID: 5957908272720044938, guid: 8857f6dbf5e38e94284b35767c41d4ba,
@@ -490,10 +497,12 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.1
   spawnAreas:
   - {fileID: 601660344}
   - {fileID: 1163482347}
   - {fileID: 1273610588}
+  maxHumans: 100
   jsonString: 
 --- !u!114 &91951471
 MonoBehaviour:
@@ -693,7 +702,7 @@ RectTransform:
   m_GameObject: {fileID: 202850120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 1969787666}
   m_RootOrder: 2
@@ -701,7 +710,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 166.66666, y: -50}
-  m_SizeDelta: {x: 60, y: 60}
+  m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &202850122
 MonoBehaviour:
@@ -716,7 +725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9528302, g: 0.049439307, b: 0.049439307, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6349,7 +6358,7 @@ RectTransform:
   m_GameObject: {fileID: 1531221834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 1969787666}
   m_RootOrder: 0
@@ -6357,7 +6366,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 33.333332, y: -50}
-  m_SizeDelta: {x: 60, y: 60}
+  m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1531221836
 MonoBehaviour:
@@ -6372,7 +6381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9528302, g: 0.049439307, b: 0.049439307, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7022,7 +7031,7 @@ RectTransform:
   m_GameObject: {fileID: 1676678595}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 1969787666}
   m_RootOrder: 1
@@ -7030,7 +7039,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 100, y: -50}
-  m_SizeDelta: {x: 60, y: 60}
+  m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1676678597
 MonoBehaviour:
@@ -7045,7 +7054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9528302, g: 0.049439307, b: 0.049439307, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7927,7 +7936,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 100}
+  m_SizeDelta: {x: 500, y: 150}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1969787667
 MonoBehaviour:

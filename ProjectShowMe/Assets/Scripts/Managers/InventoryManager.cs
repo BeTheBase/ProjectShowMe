@@ -31,7 +31,7 @@ public class InventoryManager : GenericSingleton<InventoryManager, IInventory>, 
         if (index < humanInventoryImages.Count)
         {
             humanInventoryImages[index].gameObject.SetActive(true);
-            //humanInventoryImages[index] = targetable.GetTargetImage();
+            humanInventoryImages[index].sprite = targetable.GetTargetImage();
             currentHumanTypes.Add(targetable.GetHumanType());
         }
         if (currentHumanTypes.Count >= 3)
@@ -40,7 +40,7 @@ public class InventoryManager : GenericSingleton<InventoryManager, IInventory>, 
         }
     }
 
-    public void ResetStoredHumanData(int x)
+    public void ResetStoredHumanData(int ready)
     {
         humanInventoryImages.Select(hi => { hi.gameObject.SetActive(false); return hi; }).ToList();
         currentHumanTypes.Clear();

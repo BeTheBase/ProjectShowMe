@@ -13,13 +13,13 @@ namespace Humans
 {
     public enum HumanType
     {
-        Normal = 350,
-        Fat = 300,
-        Strong = 150,
-        Skinny = 80,
-        Small = 60,
-        Cool = 40,
-        Rare = 20,
+        Normal = 35,
+        Fat = 30,
+        Strong = 15,
+        Skinny = 8,
+        Small = 6,
+        Cool = 4,
+        Rare = 2,
         Legendary = 1
     }
     
@@ -105,7 +105,7 @@ namespace Humans
             PatrolPositions.PatrolSpots = patrolPoints;
         }
 
-        public Image GetTargetImage()
+        public Sprite GetTargetImage()
         {
             return HumanIcons.GetHumanIcon(HumanType);
         }

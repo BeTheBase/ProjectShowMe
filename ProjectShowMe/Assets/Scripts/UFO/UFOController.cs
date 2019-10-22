@@ -21,6 +21,7 @@ public class UFOController : MonoBehaviour
     private void OnEnable()
     {
         EventManager<ITargetable>.AddHandler(EVENT.humanDetectEvent, AddTarget);
+        EventManager<int>.AddHandler(EVENT.gameUpdateEvent, ClearTargets);
     }
 
     private void Update()
@@ -75,11 +76,12 @@ public class UFOController : MonoBehaviour
             }));
             Debug.Log(targetable);
         }
-        else
-        {
-            Debug.Log("Reset");
-            targets.Clear();
-        }
+    }
+
+    public void ClearTargets(int ready)
+    {
+         Debug.Log("Reset");
+         targets.Clear();
     }
 
     private void AddWhenPosible(ITargetable targetable)
