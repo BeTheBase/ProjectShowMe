@@ -554,8 +554,8 @@ MonoBehaviour:
   UFO: {fileID: 1810622849}
   ID: 0
   UFOHeight: 10
-  TimeToAdd: 2
-  MaxTimeToAdd: 2
+  TimeToAdd: 1
+  MaxTimeToAdd: 1
 --- !u!4 &91951475
 Transform:
   m_ObjectHideFlags: 0
