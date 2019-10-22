@@ -559,6 +559,240 @@ MonoBehaviour:
     satisfaction: 5
   - humanTypes: 2c0100002c0100002c010000
     satisfaction: -5
+  - humanTypes: 5e0100002c0100002c010000
+    satisfaction: 5
+  - humanTypes: 2c0100005e0100005e010000
+    satisfaction: 5
+  - humanTypes: 960000009600000096000000
+    satisfaction: 10
+  - humanTypes: 5e0100002c01000096000000
+    satisfaction: 15
+  - humanTypes: 5e0100009600000096000000
+    satisfaction: 5
+  - humanTypes: 2c0100009600000096000000
+    satisfaction: 5
+  - humanTypes: 960000005e0100005e010000
+    satisfaction: 5
+  - humanTypes: 960000002c0100002c010000
+    satisfaction: 5
+  - humanTypes: 500000005000000050000000
+    satisfaction: 10
+  - humanTypes: 5e0100002c01000050000000
+    satisfaction: 10
+  - humanTypes: 5e0100009600000050000000
+    satisfaction: 10
+  - humanTypes: 2c0100009600000050000000
+    satisfaction: 10
+  - humanTypes: 5e0100005000000050000000
+    satisfaction: -10
+  - humanTypes: 2c0100005000000050000000
+    satisfaction: -5
+  - humanTypes: 960000005000000096000000
+    satisfaction: 5
+  - humanTypes: 500000005e0100005e010000
+    satisfaction: 5
+  - humanTypes: 500000002c0100002c010000
+    satisfaction: -10
+  - humanTypes: 500000009600000096000000
+    satisfaction: 5
+  - humanTypes: 3c0000003c0000003c000000
+    satisfaction: 5
+  - humanTypes: 5e0100002c0100003c000000
+    satisfaction: 10
+  - humanTypes: 5e010000960000003c000000
+    satisfaction: 10
+  - humanTypes: 5e010000500000003c000000
+    satisfaction: 5
+  - humanTypes: 2c010000960000003c000000
+    satisfaction: 10
+  - humanTypes: 2c010000500000003c000000
+    satisfaction: 5
+  - humanTypes: 96000000500000003c000000
+    satisfaction: 5
+  - humanTypes: 5e0100003c0000003c000000
+    satisfaction: 5
+  - humanTypes: 2c0100003c0000003c000000
+    satisfaction: 5
+  - humanTypes: 960000003c0000003c000000
+    satisfaction: 5
+  - humanTypes: 500000003c0000003c000000
+    satisfaction: -10
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
+  - humanTypes: 5e0100005e0100002c010000
+    satisfaction: 5
   - humanTypes: 5e0100005e0100002c010000
     satisfaction: 5
 --- !u!114 &91951470
@@ -734,8 +968,8 @@ MonoBehaviour:
   UFO: {fileID: 1810622849}
   ID: 0
   UFOHeight: 10
-  TimeToAdd: 1
-  MaxTimeToAdd: 1
+  TimeToAdd: 0.1
+  MaxTimeToAdd: 0.1
 --- !u!4 &91951475
 Transform:
   m_ObjectHideFlags: 0
@@ -1843,7 +2077,7 @@ PrefabInstance:
     - target: {fileID: 191460108968877334, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.31
+      value: 5.61
       objectReference: {fileID: 0}
     - target: {fileID: 191460108968877334, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
         type: 3}
@@ -1894,6 +2128,71 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192799785562988869, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.63449
+      objectReference: {fileID: 0}
+    - target: {fileID: 191460108593454547, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192799785577124227, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192799785577138549, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192799785577138549, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192799785577138549, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192799785577138549, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192799785577136145, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192799785577136145, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: SizeModule.y.minMaxState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192799785577136145, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: SizeModule.z.minMaxState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192799785577136145, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].value
+      value: 0.5095266
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192799785577136145, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7192799785577136145, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93af4ee4e756dd943a634c3d7e3f41b7, type: 3}
@@ -2251,12 +2550,47 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 690756049}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &580292939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6251062863980031362, guid: 7dd9a248ec8a0434485c375791f72edd,
+    type: 3}
+  m_PrefabInstance: {fileID: 667081593}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &580292940 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6961269072490962833, guid: 7dd9a248ec8a0434485c375791f72edd,
     type: 3}
   m_PrefabInstance: {fileID: 667081593}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &580292941
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580292939}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 4, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!54 &580292942
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580292939}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1001 &595574448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2592,6 +2926,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: O_Checkpoint 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6251062863980031362, guid: 7dd9a248ec8a0434485c375791f72edd,
+        type: 3}
+      propertyPath: m_TagString
+      value: CheckPoint
       objectReference: {fileID: 0}
     - target: {fileID: 6961269072490962833, guid: 7dd9a248ec8a0434485c375791f72edd,
         type: 3}
@@ -4169,7 +4508,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 70
+  field of view: 75
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -4195,7 +4534,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031711913}
   m_LocalRotation: {x: 0.3618214, y: -0, z: -0, w: 0.93224746}
-  m_LocalPosition: {x: 0, y: 41.16, z: -31.58}
+  m_LocalPosition: {x: 0, y: 32.31, z: -24.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8352,7 +8691,7 @@ PrefabInstance:
     - target: {fileID: 3492305255933429812, guid: 5db00b8e67a9834429ee099ffa65a64a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.2
+      value: -22.46
       objectReference: {fileID: 0}
     - target: {fileID: 3492305255933429812, guid: 5db00b8e67a9834429ee099ffa65a64a,
         type: 3}
