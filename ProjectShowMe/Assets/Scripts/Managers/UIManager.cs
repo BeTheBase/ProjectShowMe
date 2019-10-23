@@ -26,7 +26,8 @@ public class UIManager : MonoBehaviour
     {
         //Add the updatebabybar method to the gameupdate event
         EventManager<int>.AddHandler(EVENT.gameUpdateEvent, UpdateBabyBar);
-        EventManager<ITargetable>.AddHandler(EVENT.humanDetectEvent, UpdateHumanCount);
+        //fillBar for collectedHumanCount
+        //EventManager<ITargetable>.AddHandler(EVENT.humanDetectEvent, UpdateHumanCount);
         EventManager<int>.AddHandler(EVENT.barCompletedEvent, ClearBabyBar);
     }
 
@@ -39,14 +40,15 @@ public class UIManager : MonoBehaviour
         float newPercentage = percentage;
         newValue = babyBar.fillAmount + (newPercentage / 100f);
         updateBabyBar = true;
-        ClearHumanCount();
+        //ClearHumanCount();
     }
 
+    /*
     public void UpdateHumanCount(ITargetable empty)
     {
         newFillAmount = collectedHumanCount.fillAmount + (100f / 3f)/100f;
         updateHumanCount = true;
-    }
+    }*/
 
     public void ClearBabyBar(int empty)
     {
@@ -55,22 +57,26 @@ public class UIManager : MonoBehaviour
         updateBabyBar = true;
     }
 
+    //fillBar for collectedHumanCount
+/*
     public void ClearHumanCount()
     {
         newFillAmount = 0;
         collectedHumanCount.fillAmount = 0;
     }
-
+    */
     private void Update()
     {
         if(babyBar.fillAmount != babyBar.fillAmount + newValue && updateBabyBar)
         {
             babyBar.fillAmount = Mathf.Lerp(babyBar.fillAmount, newValue, babyBarLerpSpeed * Time.deltaTime);
         }
+        //fillBar for collectedHumanCount
+        /*
         if(collectedHumanCount.fillAmount != collectedHumanCount.fillAmount + newFillAmount && updateHumanCount)
         {
             collectedHumanCount.fillAmount = Mathf.Lerp(collectedHumanCount.fillAmount, newFillAmount, babyBarLerpSpeed * Time.deltaTime);
-        }
+        }*/
         if(babyBar.fillAmount >= 1)
         {
             EventManager<int>.BroadCast(EVENT.barCompletedEvent, pointsForCompletedBar);
