@@ -127,12 +127,18 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     percentage: 0.65
   - amount: 5
     humanType: 35
     prefab: {fileID: 8015398299006801973, guid: 6040903ef5a87da42a933bd7af7c7256,
       type: 3}
     patrolPoints:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
@@ -153,12 +159,18 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     percentage: 0.85
   - amount: 5
     humanType: 8
     prefab: {fileID: 5827935404985243496, guid: 988ec42e47966994b9be5c8962664fdc,
       type: 3}
     patrolPoints:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
@@ -179,12 +191,18 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     percentage: 0.94
   - amount: 5
     humanType: 4
     prefab: {fileID: 5982920634867887505, guid: 6d9ea8850b404e749a55da5fe4d9ec1f,
       type: 3}
     patrolPoints:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
@@ -205,12 +223,18 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     percentage: 0.98
   - amount: 1
     humanType: 1
     prefab: {fileID: 5957908272720044938, guid: 8857f6dbf5e38e94284b35767c41d4ba,
       type: 3}
     patrolPoints:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
