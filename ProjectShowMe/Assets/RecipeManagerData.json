@@ -2,27 +2,963 @@
     "Items": [
         {
             "humanTypes": [
-                350,
-                350,
-                350
+                35,
+                35,
+                35
             ],
             "satisfaction": 5
         },
         {
             "humanTypes": [
-                300,
-                300,
-                300
+                30,
+                30,
+                30
             ],
             "satisfaction": -5
         },
         {
             "humanTypes": [
-                350,
-                350,
-                300
+                35,
+                30,
+                30
+            ],
+            "satisfaction": -5
+        },
+        {
+            "humanTypes": [
+                30,
+                35,
+                35
             ],
             "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                15,
+                15,
+                15
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                35,
+                30,
+                15
+            ],
+            "satisfaction": 15
+        },
+        {
+            "humanTypes": [
+                35,
+                15,
+                15
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                30,
+                15,
+                15
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                15,
+                35,
+                35
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                15,
+                30,
+                30
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                8,
+                8,
+                8
+            ],
+            "satisfaction": -10
+        },
+        {
+            "humanTypes": [
+                35,
+                30,
+                8
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                35,
+                15,
+                8
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                30,
+                15,
+                8
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                35,
+                8,
+                8
+            ],
+            "satisfaction": -10
+        },
+        {
+            "humanTypes": [
+                30,
+                8,
+                8
+            ],
+            "satisfaction": -10
+        },
+        {
+            "humanTypes": [
+                15,
+                8,
+                8
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                8,
+                35,
+                35
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                8,
+                30,
+                30
+            ],
+            "satisfaction": -10
+        },
+        {
+            "humanTypes": [
+                8,
+                15,
+                15
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                6,
+                6,
+                6
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                35,
+                30,
+                6
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                35,
+                15,
+                6
+            ],
+            "satisfaction": 15
+        },
+        {
+            "humanTypes": [
+                35,
+                8,
+                6
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                30,
+                15,
+                6
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                30,
+                8,
+                6
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                15,
+                8,
+                6
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                35,
+                6,
+                6
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                30,
+                6,
+                6
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                15,
+                6,
+                6
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                8,
+                6,
+                6
+            ],
+            "satisfaction": -5
+        },
+        {
+            "humanTypes": [
+                6,
+                35,
+                35
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                6,
+                30,
+                30
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                6,
+                15,
+                15
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                6,
+                8,
+                8
+            ],
+            "satisfaction": -10
+        },
+        {
+            "humanTypes": [
+                4,
+                4,
+                4
+            ],
+            "satisfaction": 20
+        },
+        {
+            "humanTypes": [
+                35,
+                30,
+                4
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                35,
+                15,
+                4
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                35,
+                8,
+                4
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                35,
+                6,
+                4
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                30,
+                15,
+                4
+            ],
+            "satisfaction": 15
+        },
+        {
+            "humanTypes": [
+                30,
+                8,
+                4
+            ],
+            "satisfaction": -10
+        },
+        {
+            "humanTypes": [
+                30,
+                6,
+                4
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                15,
+                8,
+                4
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                15,
+                6,
+                4
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                8,
+                6,
+                4
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                35,
+                4,
+                4
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                30,
+                4,
+                4
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                15,
+                4,
+                4
+            ],
+            "satisfaction": 15
+        },
+        {
+            "humanTypes": [
+                8,
+                4,
+                4
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                6,
+                4,
+                4
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                4,
+                35,
+                35
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                4,
+                30,
+                30
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                4,
+                15,
+                15
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                4,
+                8,
+                8
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                4,
+                6,
+                8
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                2,
+                2,
+                2
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                35,
+                30,
+                2
+            ],
+            "satisfaction": 20
+        },
+        {
+            "humanTypes": [
+                35,
+                15,
+                2
+            ],
+            "satisfaction": 20
+        },
+        {
+            "humanTypes": [
+                35,
+                8,
+                2
+            ],
+            "satisfaction": 20
+        },
+        {
+            "humanTypes": [
+                35,
+                6,
+                2
+            ],
+            "satisfaction": 20
+        },
+        {
+            "humanTypes": [
+                35,
+                4,
+                2
+            ],
+            "satisfaction": 25
+        },
+        {
+            "humanTypes": [
+                30,
+                15,
+                2
+            ],
+            "satisfaction": 20
+        },
+        {
+            "humanTypes": [
+                30,
+                8,
+                2
+            ],
+            "satisfaction": 10
+        },
+        {
+            "humanTypes": [
+                30,
+                6,
+                2
+            ],
+            "satisfaction": 20
+        },
+        {
+            "humanTypes": [
+                30,
+                4,
+                2
+            ],
+            "satisfaction": 25
+        },
+        {
+            "humanTypes": [
+                15,
+                8,
+                2
+            ],
+            "satisfaction": 20
+        },
+        {
+            "humanTypes": [
+                15,
+                6,
+                2
+            ],
+            "satisfaction": 20
+        },
+        {
+            "humanTypes": [
+                15,
+                4,
+                2
+            ],
+            "satisfaction": 30
+        },
+        {
+            "humanTypes": [
+                8,
+                6,
+                4
+            ],
+            "satisfaction": 15
+        },
+        {
+            "humanTypes": [
+                8,
+                4,
+                2
+            ],
+            "satisfaction": 20
+        },
+        {
+            "humanTypes": [
+                6,
+                4,
+                2
+            ],
+            "satisfaction": 20
+        },
+        {
+            "humanTypes": [
+                35,
+                2,
+                2
+            ],
+            "satisfaction": 25
+        },
+        {
+            "humanTypes": [
+                30,
+                2,
+                2
+            ],
+            "satisfaction": 20
+        },
+        {
+            "humanTypes": [
+                15,
+                2,
+                2
+            ],
+            "satisfaction": 25
+        },
+        {
+            "humanTypes": [
+                8,
+                2,
+                4
+            ],
+            "satisfaction": 25
+        },
+        {
+            "humanTypes": [
+                6,
+                2,
+                2
+            ],
+            "satisfaction": 25
+        },
+        {
+            "humanTypes": [
+                4,
+                2,
+                2
+            ],
+            "satisfaction": 30
+        },
+        {
+            "humanTypes": [
+                4,
+                35,
+                35
+            ],
+            "satisfaction": 20
+        },
+        {
+            "humanTypes": [
+                2,
+                30,
+                30
+            ],
+            "satisfaction": 15
+        },
+        {
+            "humanTypes": [
+                2,
+                15,
+                15
+            ],
+            "satisfaction": 20
+        },
+        {
+            "humanTypes": [
+                2,
+                8,
+                8
+            ],
+            "satisfaction": 15
+        },
+        {
+            "humanTypes": [
+                2,
+                6,
+                6
+            ],
+            "satisfaction": 15
+        },
+        {
+            "humanTypes": [
+                2,
+                4,
+                4
+            ],
+            "satisfaction": 5
+        },
+        {
+            "humanTypes": [
+                1,
+                1,
+                1
+            ],
+            "satisfaction": 80
+        },
+        {
+            "humanTypes": [
+                35,
+                30,
+                1
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                35,
+                15,
+                1
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                35,
+                8,
+                1
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                35,
+                6,
+                1
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                35,
+                4,
+                1
+            ],
+            "satisfaction": 45
+        },
+        {
+            "humanTypes": [
+                35,
+                2,
+                2
+            ],
+            "satisfaction": 50
+        },
+        {
+            "humanTypes": [
+                30,
+                15,
+                1
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                30,
+                8,
+                1
+            ],
+            "satisfaction": 30
+        },
+        {
+            "humanTypes": [
+                30,
+                6,
+                1
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                30,
+                4,
+                1
+            ],
+            "satisfaction": 45
+        },
+        {
+            "humanTypes": [
+                30,
+                2,
+                1
+            ],
+            "satisfaction": 50
+        },
+        {
+            "humanTypes": [
+                15,
+                8,
+                1
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                15,
+                6,
+                1
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                15,
+                4,
+                1
+            ],
+            "satisfaction": 45
+        },
+        {
+            "humanTypes": [
+                15,
+                2,
+                1
+            ],
+            "satisfaction": 45
+        },
+        {
+            "humanTypes": [
+                8,
+                6,
+                1
+            ],
+            "satisfaction": 35
+        },
+        {
+            "humanTypes": [
+                8,
+                4,
+                1
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                8,
+                2,
+                1
+            ],
+            "satisfaction": 45
+        },
+        {
+            "humanTypes": [
+                6,
+                4,
+                1
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                6,
+                2,
+                1
+            ],
+            "satisfaction": 45
+        },
+        {
+            "humanTypes": [
+                4,
+                2,
+                1
+            ],
+            "satisfaction": 60
+        },
+        {
+            "humanTypes": [
+                35,
+                1,
+                1
+            ],
+            "satisfaction": 50
+        },
+        {
+            "humanTypes": [
+                30,
+                1,
+                1
+            ],
+            "satisfaction": 50
+        },
+        {
+            "humanTypes": [
+                15,
+                1,
+                1
+            ],
+            "satisfaction": 55
+        },
+        {
+            "humanTypes": [
+                8,
+                1,
+                1
+            ],
+            "satisfaction": 50
+        },
+        {
+            "humanTypes": [
+                6,
+                1,
+                1
+            ],
+            "satisfaction": 50
+        },
+        {
+            "humanTypes": [
+                4,
+                1,
+                1
+            ],
+            "satisfaction": 60
+        },
+        {
+            "humanTypes": [
+                2,
+                1,
+                1
+            ],
+            "satisfaction": 70
+        },
+        {
+            "humanTypes": [
+                1,
+                35,
+                35
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                1,
+                30,
+                30
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                1,
+                15,
+                15
+            ],
+            "satisfaction": 45
+        },
+        {
+            "humanTypes": [
+                1,
+                8,
+                8
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                1,
+                6,
+                6
+            ],
+            "satisfaction": 40
+        },
+        {
+            "humanTypes": [
+                1,
+                4,
+                4
+            ],
+            "satisfaction": 50
+        },
+        {
+            "humanTypes": [
+                1,
+                2,
+                2
+            ],
+            "satisfaction": 65
         }
     ]
 }

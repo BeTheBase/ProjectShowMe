@@ -8,7 +8,7 @@ public static class JsonConverter<T>
 {
 
     /// <summary>
-    /// Reads the Json file if found. And gives the levels list all the level data. 
+    /// Reads the Json file into a list of type T
     /// </summary>
     public static List<T> FromJson(string jsonString, string path)
     {
@@ -25,7 +25,7 @@ public static class JsonConverter<T>
     }
 
     /// <summary>
-    /// Serializes the levels list to a json string 
+    /// Serializes the list to a json string at given path
     /// </summary>
     /// <param name="x"></param>
     public static string SerializeToJson(List<T> list, string jsonString, string path)

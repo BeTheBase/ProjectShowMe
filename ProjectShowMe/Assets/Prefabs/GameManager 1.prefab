@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3343425856433196968}
   - component: {fileID: 3343425856433196969}
   - component: {fileID: 3343425856433196970}
+  - component: {fileID: 3553024039002457528}
   m_Layer: 0
   m_Name: GameManager 1
   m_TagString: Untagged
@@ -52,8 +53,7 @@ MonoBehaviour:
   UFO: {fileID: 0}
   ID: 0
   UFOHeight: 10
-  TimeToAdd: 1
-  MaxTimeToAdd: 1
+  UFORayWidth: 5
 --- !u!114 &3343425856433196982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,12 +70,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  currentHumanTypes: 1e000000230000000f0000000800000006000000040000000200000001000000
+  currentHumanTypes: 
 --- !u!114 &3343425856433196983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +85,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   babyBar: {fileID: 0}
   babyBarLerpSpeed: 2
+  collectedHumanCount: {fileID: 0}
 --- !u!114 &3343425856433196968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,3 +498,18 @@ MonoBehaviour:
     satisfaction: 50
   - humanTypes: 010000000200000002000000
     satisfaction: 65
+--- !u!114 &3553024039002457528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3343425856433196971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f29dee171436f544ad05b4deb2f0739, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lerpFromPoint: {fileID: 0}
+  lerpTowardsPoint: {fileID: 0}
+  lerpSpeed: 5
