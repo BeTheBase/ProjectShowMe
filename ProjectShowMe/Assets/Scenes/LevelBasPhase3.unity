@@ -7804,6 +7804,47 @@ PrefabInstance:
       propertyPath: humans.Array.data[6].percentage
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 3343425856433196969, guid: 9285f8c8dda458b4c8d8a0f3e2bc18f6,
+        type: 3}
+      propertyPath: humans.Array.data[5].prefab
+      value: 
+      objectReference: {fileID: 4300304289465979970, guid: 6d9ea8850b404e749a55da5fe4d9ec1f,
+        type: 3}
+    - target: {fileID: 3343425856433196969, guid: 9285f8c8dda458b4c8d8a0f3e2bc18f6,
+        type: 3}
+      propertyPath: humans.Array.data[6].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343425856433196969, guid: 9285f8c8dda458b4c8d8a0f3e2bc18f6,
+        type: 3}
+      propertyPath: humans.Array.data[4].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343425856433196969, guid: 9285f8c8dda458b4c8d8a0f3e2bc18f6,
+        type: 3}
+      propertyPath: humans.Array.data[5].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343425856433196969, guid: 9285f8c8dda458b4c8d8a0f3e2bc18f6,
+        type: 3}
+      propertyPath: humans.Array.data[1].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343425856433196969, guid: 9285f8c8dda458b4c8d8a0f3e2bc18f6,
+        type: 3}
+      propertyPath: humans.Array.data[0].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343425856433196969, guid: 9285f8c8dda458b4c8d8a0f3e2bc18f6,
+        type: 3}
+      propertyPath: humans.Array.data[2].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343425856433196969, guid: 9285f8c8dda458b4c8d8a0f3e2bc18f6,
+        type: 3}
+      propertyPath: maxHumans
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3553024039002457528, guid: 9285f8c8dda458b4c8d8a0f3e2bc18f6,
         type: 3}
       propertyPath: mothershipComponents.Array.size
