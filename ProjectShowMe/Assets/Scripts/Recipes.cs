@@ -25,7 +25,10 @@ public static class Recipes
 
     public static int RecipeChecker(List<HumanType> humanTypes)
     {
-        int currentComboSatisfaction = Combos.Find(c => c.HumanTypes.Equals(humanTypes)).Satisfaction;
+        //int currentComboSatisfaction = Combos.Find(c => c.HumanTypes.Equals(humanTypes)).Satisfaction;
+
+        RecipeCombo comb = Combos.Find(c => c.HumanTypes.Contains(humanTypes[0])&& c.HumanTypes.Contains(humanTypes[1]) &&c.HumanTypes.Contains(humanTypes[2]));
+        int currentComboSatisfaction = comb.Satisfaction;
         if (currentComboSatisfaction == 0)
             return -5;
         else

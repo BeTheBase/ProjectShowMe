@@ -34,6 +34,7 @@ public class UFOTrigger : MonoBehaviour
             {
                 EventManager<ITargetable>.BroadCast(EVENT.humanDetectEvent, targetable);
                 Debug.Log("ADD");
+                InRange = false;
             }
         }
         if (other.gameObject.tag == "CheckPoint")

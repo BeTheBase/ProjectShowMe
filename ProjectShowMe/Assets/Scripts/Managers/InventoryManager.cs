@@ -28,7 +28,7 @@ public class InventoryManager : GenericSingleton<InventoryManager, IInventory>, 
         if (humanInventoryImages[index].IsActive()) index += 1;
         if (index > humanInventoryImages.Count)
             return;
-        if (index < humanInventoryImages.Count)
+        if (index <= humanInventoryImages.Count)
         {
             humanInventoryImages[index].gameObject.SetActive(true);
             humanInventoryImages[index].sprite = targetable.GetTargetImage();

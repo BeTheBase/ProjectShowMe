@@ -25,8 +25,8 @@ public class RecipeManager : MonoBehaviour
 
     private void Start()
     {
-        Recipes.Combos = combos;
         combos = JsonConverter<RecipeCombo>.FromJson(jsonString, "/RecipeManagerData.json");
+        Recipes.Combos = combos;
     }
 
     public void SaveManagerData(string j)
