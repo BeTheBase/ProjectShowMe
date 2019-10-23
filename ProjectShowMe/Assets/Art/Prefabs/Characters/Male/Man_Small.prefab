@@ -679,7 +679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  HumanType: 60
+  HumanType: 6
 --- !u!114 &6625957827415568787
 MonoBehaviour:
   m_ObjectHideFlags: 0

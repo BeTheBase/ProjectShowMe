@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe679902cdbccd040b1dc9b1f401e698, type: 3}
   m_Name: HumanIconCool
   m_EditorClassIdentifier: 
-  humanType: 40
+  humanType: 4
   humanIcon: {fileID: 21300000, guid: 7562ac53c0fa08848994bbbbdc8318a7, type: 3}
