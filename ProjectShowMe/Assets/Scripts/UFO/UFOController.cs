@@ -14,8 +14,9 @@ public class UFOController : MonoBehaviour
     public GameObject UFO;
     public int ID = 0;
     public float UFOHeight = 6f;
-    public float TimeToAdd = 20f;
-    public float MaxTimeToAdd = 20f;
+    public float UFORayWidth = 5f;
+    private float TimeToAdd = 2f;
+    private float MaxTimeToAdd = 2f;
     private int maxTargetInventorySpace = 2;
 
     private void OnEnable()
@@ -42,26 +43,27 @@ public class UFOController : MonoBehaviour
         }
     }
 
+    /*
     private void Beem()
     {
         Vector3 dir = UFO.transform.TransformDirection(Vector3.down);
         RaycastHit hit;
         Debug.DrawRay(UFO.transform.position, dir * 50, Color.blue);
-        if (Physics.SphereCast(UFO.transform.position, 3f,dir, out hit, Mathf.Infinity))
+        if (Physics.SphereCast(UFO.transform.position, UFORayWidth,dir, out hit, 20f))
         {
-            string name = hit.transform.name;
+            string name = hit.transform.tag;
             if (name == "HUMAN")
             {
                 ITargetable targetable = hit.transform.GetComponent<ITargetable>(); ;
                 targetable?.Lock();
-                //AddWhenPosible(targetable);
+                AddWhenPosible(targetable);
             }
             else
             {
                 TimeToAdd = MaxTimeToAdd;
             }
         }
-    }
+    }*/
 
     public void AddTarget(ITargetable targetable)
     {
@@ -93,6 +95,7 @@ public class UFOController : MonoBehaviour
             {
                 Debug.Log(targets.Count);
                 targets.Add(targetable);
+                EventManager<ITargetable>.BroadCast(EVENT.humanDetectEvent, targetable);
                 targetable.Remove();
                 TimeToAdd = MaxTimeToAdd;
             }

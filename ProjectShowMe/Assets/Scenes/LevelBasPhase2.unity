@@ -535,6 +535,7 @@ GameObject:
   - component: {fileID: 91951471}
   - component: {fileID: 91951470}
   - component: {fileID: 91951469}
+  - component: {fileID: 91951476}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -586,6 +587,7 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.85
   - amount: 5
     humanType: 350
     prefab: {fileID: 8015398299006801973, guid: 6040903ef5a87da42a933bd7af7c7256,
@@ -598,6 +600,7 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.8
   - amount: 5
     humanType: 150
     prefab: {fileID: 3595635081923971463, guid: 6c02d5807bf47304da828b789d323ef9,
@@ -610,6 +613,7 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.75
   - amount: 5
     humanType: 80
     prefab: {fileID: 5827935404985243496, guid: 988ec42e47966994b9be5c8962664fdc,
@@ -622,6 +626,7 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.7
   - amount: 5
     humanType: 60
     prefab: {fileID: 8535784924919005636, guid: 8c2feb634d75e6247954c846dad6ca66,
@@ -634,6 +639,7 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.65
   - amount: 5
     humanType: 40
     prefab: {fileID: 5982920634867887505, guid: 6d9ea8850b404e749a55da5fe4d9ec1f,
@@ -646,6 +652,7 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.6
   - amount: 5
     humanType: 20
     prefab: {fileID: 1152089087528381836, guid: 9c5b6ec6d2a97a64a851728abd049eb6,
@@ -658,6 +665,7 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.3
   - amount: 1
     humanType: 1
     prefab: {fileID: 5957908272720044938, guid: 8857f6dbf5e38e94284b35767c41d4ba,
@@ -670,10 +678,12 @@ MonoBehaviour:
     - {fileID: 1163482347}
     - {fileID: 2067958190}
     - {fileID: 226675051}
+    percentage: 0.1
   spawnAreas:
   - {fileID: 601660344}
   - {fileID: 1163482347}
   - {fileID: 1273610588}
+  maxHumans: 30
   jsonString: 
 --- !u!114 &91951471
 MonoBehaviour:
@@ -734,8 +744,7 @@ MonoBehaviour:
   UFO: {fileID: 1810622849}
   ID: 0
   UFOHeight: 10
-  TimeToAdd: 1
-  MaxTimeToAdd: 1
+  UFORayWidth: 5
 --- !u!4 &91951475
 Transform:
   m_ObjectHideFlags: 0
@@ -750,6 +759,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &91951476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91951468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f29dee171436f544ad05b4deb2f0739, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lerpFromPoint: {fileID: 580292940}
+  lerpTowardsPoint: {fileID: 2094808376}
+  lerpSpeed: 5
 --- !u!1001 &105609436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1070,7 +1094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9528302, g: 0.049439307, b: 0.049439307, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1894,6 +1918,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 191460108143026678, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 191460108143026678, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 191460108593454545, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 191460108143026681, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: m_Range
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 191460108143026681, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 191460108593454547, guid: 93af4ee4e756dd943a634c3d7e3f41b7,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93af4ee4e756dd943a634c3d7e3f41b7, type: 3}
@@ -6530,7 +6584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9528302, g: 0.049439307, b: 0.049439307, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6963,7 +7017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9528302, g: 0.049439307, b: 0.049439307, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8437,6 +8491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2113248358}
   - component: {fileID: 2113248359}
+  - component: {fileID: 2113248360}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: CheckPoint
@@ -8475,6 +8530,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 20, z: 5}
   m_Center: {x: -22.5, y: 9.17, z: 57.29}
+--- !u!54 &2113248360
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113248357}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!4 &2136255157 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3706223108641702939, guid: 6176c8ac005b1074b88cbbc85a9fdbf4,

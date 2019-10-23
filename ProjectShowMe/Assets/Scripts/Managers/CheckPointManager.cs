@@ -15,7 +15,7 @@ public class CheckPointManager : GenericSingleton<CheckPointManager, ICheckPoint
     private void OnEnable()
     {
         //add the blend method to the checkpoint event
-        EventManager<List<HumanType>>.AddHandler(EVENT.checkPointEvent, Blend);
+        EventManager<List<HumanType>>.AddHandler(EVENT.blendEvent, Blend);
     }
 
     /// <summary>

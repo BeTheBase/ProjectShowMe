@@ -12,7 +12,6 @@ public class HumanManager : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager<string>.AddHandler(EVENT.managerDataSavedEvent, SaveManagerData);
         EventManager<string>.AddHandler(EVENT.managerLoadEvent, LoadManagerData);
     }
 

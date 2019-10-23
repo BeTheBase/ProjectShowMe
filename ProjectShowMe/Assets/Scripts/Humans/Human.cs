@@ -22,12 +22,12 @@ namespace Humans
         Rare = 2,
         Legendary = 1
     }
-    
+    [RequireComponent(typeof(PatrolPoints))]
     [RequireComponent(typeof(NavMeshAgent))]
     [RequireComponent(typeof(Rigidbody))]
     public class Human : MonoBehaviour, ITargetable
     {
-        [SerializeField] private float speed = 5f;
+        [SerializeField] private float rotationAndLerpSpeed = 5f;
 
         private PatrolPoints PatrolPositions { get; set; }
 
@@ -59,7 +59,7 @@ namespace Humans
         private void Update()
         {
             var newPointDistance = PatrolPositions.PatrolSpots[randomSpot].position - transform.position;
-            var step = speed * Time.deltaTime;
+            var step = rotationAndLerpSpeed * Time.deltaTime;
             Vector3 newDir = Vector3.RotateTowards(transform.forward, newPointDistance, step, 0.0f);
 
             if (Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(PatrolPositions.PatrolSpots[randomSpot].position.x, 0, PatrolPositions.PatrolSpots[randomSpot].position.z)) > 1f)
@@ -87,7 +87,9 @@ namespace Humans
 
         public void Remove()
         {
+            EventManager<GameObject>.BroadCast(EVENT.humanCollected, this.gameObject);
             gameObject.SetActive(false);
+
         }
 
         public HumanType GetHumanType()

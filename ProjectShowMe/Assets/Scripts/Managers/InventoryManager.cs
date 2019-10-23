@@ -36,7 +36,7 @@ public class InventoryManager : GenericSingleton<InventoryManager, IInventory>, 
         }
         if (currentHumanTypes.Count >= 3)
         {
-            EventManager<List<HumanType>>.BroadCast(EVENT.checkPointEvent, currentHumanTypes);
+            EventManager<List<HumanType>>.BroadCast(EVENT.blendEvent, currentHumanTypes);
         }
     }
 
