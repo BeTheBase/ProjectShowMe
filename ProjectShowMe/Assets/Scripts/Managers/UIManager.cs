@@ -13,7 +13,7 @@ public class UIManager : MonoBehaviour
     /// <summary>
     /// Bar representation of the happines of the baby
     /// </summary>
-    [SerializeField] private Slider babyBar;
+    [SerializeField] private Image babyBar;
     [SerializeField] private float babyBarLerpSpeed = 2f;
     [SerializeField] private Image collectedHumanCount;
     [SerializeField] private int pointsForCompletedBar = 100;
@@ -36,7 +36,8 @@ public class UIManager : MonoBehaviour
     /// <param name="percentage"></param>
     public void UpdateBabyBar(int percentage)
     {
-        newValue = babyBar.value + percentage;
+        float newPercentage = percentage;
+        newValue = babyBar.fillAmount + (newPercentage / 100f);
         updateBabyBar = true;
         ClearHumanCount();
     }
@@ -50,7 +51,7 @@ public class UIManager : MonoBehaviour
     public void ClearBabyBar(int empty)
     {
         newValue = 0;
-        babyBar.value = 0;
+        babyBar.fillAmount = 0;
         updateBabyBar = true;
     }
 
@@ -62,19 +63,19 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        if(babyBar.value != babyBar.value + newValue && updateBabyBar)
+        if(babyBar.fillAmount != babyBar.fillAmount + newValue && updateBabyBar)
         {
-            babyBar.value = Mathf.Lerp(babyBar.value, newValue, babyBarLerpSpeed * Time.deltaTime);
+            babyBar.fillAmount = Mathf.Lerp(babyBar.fillAmount, newValue, babyBarLerpSpeed * Time.deltaTime);
         }
         if(collectedHumanCount.fillAmount != collectedHumanCount.fillAmount + newFillAmount && updateHumanCount)
         {
             collectedHumanCount.fillAmount = Mathf.Lerp(collectedHumanCount.fillAmount, newFillAmount, babyBarLerpSpeed * Time.deltaTime);
         }
-        if(babyBar.value >= babyBar.maxValue)
+        if(babyBar.fillAmount >= 1)
         {
             EventManager<int>.BroadCast(EVENT.barCompletedEvent, pointsForCompletedBar);
         }
-        if(babyBar.value <= 0)
+        if(babyBar.fillAmount <= 0)
         {
             Globals.OnGameOverEvent();
         }
