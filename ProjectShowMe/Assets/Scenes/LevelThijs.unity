@@ -3171,7 +3171,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 500
   field of view: 70
   orthographic: 0
   orthographic size: 5
@@ -4278,13 +4278,13 @@ Transform:
   - {fileID: 1594246212}
   - {fileID: 345869911}
   - {fileID: 1978272230}
-  - {fileID: 85693398}
   - {fileID: 1298944443}
-  - {fileID: 1936359925}
   - {fileID: 1767500912}
+  - {fileID: 1936359925}
   - {fileID: 1634122974}
   - {fileID: 180718666}
   - {fileID: 2090557620}
+  - {fileID: 85693398}
   - {fileID: 138583674}
   m_Father: {fileID: 983091086}
   m_RootOrder: 3

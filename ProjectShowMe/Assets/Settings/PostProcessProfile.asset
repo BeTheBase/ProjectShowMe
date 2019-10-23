@@ -18,10 +18,10 @@ MonoBehaviour:
     value: 1
   focusDistance:
     overrideState: 1
-    value: 19.88
+    value: 19.5
   aperture:
     overrideState: 1
-    value: 1.91
+    value: 1.9
   focalLength:
     overrideState: 1
     value: 80
@@ -63,10 +63,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 3
+    value: 15
   threshold:
     overrideState: 1
-    value: 1
+    value: 0.9
   softKnee:
     overrideState: 0
     value: 0.5
@@ -145,7 +145,7 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: 10
+    value: 15
   tint:
     overrideState: 0
     value: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
     value: 0
   contrast:
     overrideState: 1
-    value: 10
+    value: 15
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
