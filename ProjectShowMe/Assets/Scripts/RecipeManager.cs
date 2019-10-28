@@ -25,7 +25,10 @@ public class RecipeManager : MonoBehaviour
 
     private void Start()
     {
+#if UNITY_EDITOR
+        //Code here for Editor only.
         combos = JsonConverter<RecipeCombo>.FromJson(jsonString, "/RecipeManagerData.json");
+#endif
         Recipes.Combos = combos;
     }
 

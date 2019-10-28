@@ -64,8 +64,16 @@ namespace Humans
 
             if (Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(PatrolPositions.PatrolSpots[randomSpot].position.x, 0, PatrolPositions.PatrolSpots[randomSpot].position.z)) > 1f)
             {
-                if(Agent.enabled)
-                    Agent.SetDestination(PatrolPositions.PatrolSpots[randomSpot].position);
+                try
+                {
+                    if (Agent.enabled)
+                        if(Agent.isOnNavMesh)
+                            Agent.SetDestination(PatrolPositions.PatrolSpots[randomSpot].position);
+                }
+                catch
+                {
+
+                }
             }
             else
             {
