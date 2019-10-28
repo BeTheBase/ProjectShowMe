@@ -15,6 +15,7 @@ public interface ITargetable
     void BeemHuman(Transform position,float speed);
     void SetHumanType(HumanType humanType);
     void SetPatrolPoints(List<Transform> patrolPoints);
+    void RunAway(Transform point);
     void Lock();
     void UnLock();
     void Remove();

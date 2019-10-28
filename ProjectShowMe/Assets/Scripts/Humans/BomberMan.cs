@@ -107,4 +107,10 @@ public class BomberMan : MonoBehaviour, ITargetable
         }
         PatrolPositions.PatrolSpots = patrolPoints;
     }
+
+
+    public void RunAway(Transform point)
+    {
+        //nope
+    }
 }

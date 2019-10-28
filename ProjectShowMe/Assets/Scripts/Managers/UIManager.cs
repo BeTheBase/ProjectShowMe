@@ -15,7 +15,7 @@ public class UIManager : MonoBehaviour
     /// </summary>
     [SerializeField] private Image babyBar;
     [SerializeField] private float babyBarLerpSpeed = 2f;
-    [SerializeField] private Image collectedHumanCount;
+    //[SerializeField] private Image collectedHumanCount;
     [SerializeField] private int pointsForCompletedBar = 100;
     [SerializeField] private float decreaseAmount = 0.01f;
     [SerializeField] private float decreaseBoostTime = 60f;

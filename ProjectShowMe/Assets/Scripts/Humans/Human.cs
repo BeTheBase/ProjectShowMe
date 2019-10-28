@@ -37,6 +37,7 @@ namespace Humans
         private NavMeshAgent Agent { get; set; }
 
         private int randomSpot = 0;
+        private Vector3 newPosition = Vector3.zero;
 
         public HumanType HumanType = HumanType.Normal;
 
@@ -52,8 +53,9 @@ namespace Humans
 
         private void Start()
         {
-
             randomSpot = Random.Range(0, PatrolPositions.PatrolSpots.Count);
+            newPosition = new Vector3(PatrolPositions.PatrolSpots[randomSpot].position.x, 0, PatrolPositions.PatrolSpots[randomSpot].position.z);
+
         }
 
         private void Update()
@@ -68,7 +70,7 @@ namespace Humans
                 {
                     if (Agent.enabled)
                         if(Agent.isOnNavMesh)
-                            Agent.SetDestination(PatrolPositions.PatrolSpots[randomSpot].position);
+                            Agent.SetDestination(new Vector3(PatrolPositions.PatrolSpots[randomSpot].position.x, 0, PatrolPositions.PatrolSpots[randomSpot].position.z)     );
                 }
                 catch
                 {
@@ -78,6 +80,7 @@ namespace Humans
             else
             {
                 randomSpot = Random.Range(0, PatrolPositions.PatrolSpots.Count);
+                newPosition = PatrolPositions.PatrolSpots[randomSpot].position;
             }
         }
 
@@ -122,6 +125,11 @@ namespace Humans
         public void BeemHuman(Transform position, float speed)
         {
             transform.LerpTransform(this, position.position, speed);
+        }
+
+        public void RunAway(Transform point)
+        {
+            newPosition = new Vector3(point.position.x, 0, point.position.z);
         }
     }
 }
