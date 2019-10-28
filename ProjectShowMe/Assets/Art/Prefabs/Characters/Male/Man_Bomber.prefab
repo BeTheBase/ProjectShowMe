@@ -694,11 +694,11 @@ GameObject:
   - component: {fileID: 150011938275402645}
   - component: {fileID: 3031626745613925466}
   - component: {fileID: 1174933776159833546}
-  - component: {fileID: 253009064178863126}
-  - component: {fileID: 70902571473743882}
+  - component: {fileID: 4441007631983570503}
+  - component: {fileID: 7806718705824948255}
   m_Layer: 9
   m_Name: Man_Bomber
-  m_TagString: HUMAN
+  m_TagString: BomberMan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -770,7 +770,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &253009064178863126
+--- !u!114 &4441007631983570503
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -779,12 +779,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4122083044253204651}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c586560be439b34f82362ce1c5c70dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f953ce77f672014db0efaca12a00787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  HumanType: 35
---- !u!114 &70902571473743882
+  rotationAndLerpSpeed: 5
+  bomb: {fileID: 1626356904471694001, guid: d89b1a1fe40350d4da02d8471d321cd1, type: 3}
+  HumanType: 0
+--- !u!114 &7806718705824948255
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -796,7 +797,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d910e76b5d57a04cb18779a4f894538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolSpots: []
+  patrolSpots:
+  - {fileID: 0}
 --- !u!1 &4239763918630970669
 GameObject:
   m_ObjectHideFlags: 0

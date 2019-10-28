@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8cb7a20a9ee9514388270d2fbdb1d55, type: 3}
   m_Name: HumanFat
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7639333080819143031, guid: ced6ca528c5197e4f808f505dbed6354, type: 3}
-  size: 50
+  prefab: {fileID: 9068140573857000363, guid: 7fdd5611c905b574ba8fcaff59b548a3, type: 3}
+  size: 20

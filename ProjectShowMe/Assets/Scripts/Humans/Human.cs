@@ -20,7 +20,8 @@ namespace Humans
         Small = 6,
         Cool = 4,
         Rare = 2,
-        Legendary = 1
+        Legendary = 1,
+        Bomber = 0
     }
     [RequireComponent(typeof(PatrolPoints))]
     [RequireComponent(typeof(NavMeshAgent))]
@@ -52,7 +53,6 @@ namespace Humans
         private void Start()
         {
 
-            HumanIcons.Init();
             randomSpot = Random.Range(0, PatrolPositions.PatrolSpots.Count);
         }
 
@@ -97,7 +97,6 @@ namespace Humans
         {
             EventManager<GameObject>.BroadCast(EVENT.humanCollected, this.gameObject);
             gameObject.SetActive(false);
-
         }
 
         public HumanType GetHumanType()

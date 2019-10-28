@@ -25,7 +25,6 @@ public class UFOTrigger : MonoBehaviour
         //Check of er een human in de trigger is gekomen
         if(other.gameObject.tag == "HUMAN")
         {
-            //Oke er is een human dus inrange wordt nu true
             InRange = true;
             ITargetable targetable = other.gameObject.GetComponent<ITargetable>();
             targetable?.Lock();
@@ -34,6 +33,19 @@ public class UFOTrigger : MonoBehaviour
             {
                 EventManager<ITargetable>.BroadCast(EVENT.humanDetectEvent, targetable);
                 Debug.Log("ADD");
+                InRange = false;
+            }
+        }
+        if(other.gameObject.tag == "BomberMan")
+        {
+            InRange = true;
+            ITargetable targetable = other.gameObject.GetComponent<ITargetable>();
+            targetable?.Lock();
+            yield return new WaitForSeconds(TimeToAdd);
+            if (InRange)
+            {
+                EventManager<ITargetable>.BroadCast(EVENT.bombDetectEvent, targetable);
+                Debug.Log("OOps! BOEM");
                 InRange = false;
             }
         }
@@ -74,6 +86,12 @@ public class UFOTrigger : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if(other.gameObject.tag == "HUMAN")
+        {
+            InRange = false;
+            ITargetable targetable = other.GetComponent<ITargetable>();
+            targetable?.UnLock();
+        }
+        if(other.gameObject.tag == "BomberMan")
         {
             InRange = false;
             ITargetable targetable = other.GetComponent<ITargetable>();

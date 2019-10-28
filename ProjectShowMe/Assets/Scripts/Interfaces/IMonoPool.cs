@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IMonoPool
 {
-    MonoBehaviour SpawnFromPool<T>(Vector3 position, Quaternion rotation) where T : MonoBehaviour;
+    GameObject SpawnFromPool(GameObject prefab, Vector3 position, Quaternion rotation);
 }
