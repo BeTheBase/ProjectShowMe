@@ -37,7 +37,7 @@ public class BomberMan : MonoBehaviour, ITargetable
     }
     private IEnumerator ActivateBomb(Transform position)
     {
-        yield return new WaitForEndOfFrame();
+        yield return new WaitForSeconds(1.5f);
         GameObject explosion = Instantiate(bomb, position);
     }
 
