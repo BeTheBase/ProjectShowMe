@@ -16,6 +16,14 @@ public class BomberMan : MonoBehaviour, ITargetable
 {
     [SerializeField] private float rotationAndLerpSpeed = 5f;
     [SerializeField] private GameObject bomb;
+    [SerializeField] private float explodeAfterTime = 1.5f;
+    [SerializeField] private float speed = 4f;
+    [SerializeField] private float boostTime = 1f;
+    [Range(5, 20)]
+    [SerializeField] private float randomBoostActivationRange;
+    [Range(1, 4)]
+    [SerializeField] private float boostMutiplierRange;
+
     private PatrolPoints PatrolPositions { get; set; }
 
     private Rigidbody RBody { get; set; }
@@ -34,11 +42,22 @@ public class BomberMan : MonoBehaviour, ITargetable
             PatrolPositions = GetComponent<PatrolPoints>();
         if (!Agent)
             Agent = GetComponent<NavMeshAgent>();
+
+        StartCoroutine(Boost());
     }
     private IEnumerator ActivateBomb(Transform position)
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(explodeAfterTime);
         GameObject explosion = Instantiate(bomb, position);
+    }
+
+    private IEnumerator Boost()
+    {
+        yield return new WaitForSeconds(Random.Range(2, randomBoostActivationRange));
+        speed *= boostMutiplierRange;
+        yield return new WaitForSeconds(boostTime);
+        speed /= boostMutiplierRange;
+        StartCoroutine(Boost());
     }
 
     private void Update()
@@ -49,6 +68,7 @@ public class BomberMan : MonoBehaviour, ITargetable
                 if (Agent.isOnNavMesh)
                 {
                     Vector3 newPos = PatrolPositions.PatrolSpots[Random.Range(0, PatrolPositions.PatrolSpots.Count)].position;
+                    Agent.speed = speed;
                     Agent.SetDestination(new Vector3(newPos.x,0,newPos.z));
                 }
         }
@@ -63,7 +83,6 @@ public class BomberMan : MonoBehaviour, ITargetable
         transform.LerpTransform(this, position.position, speed);
         StartCoroutine(ActivateBomb(position));
     }
-
 
     public void Lock()
     {
