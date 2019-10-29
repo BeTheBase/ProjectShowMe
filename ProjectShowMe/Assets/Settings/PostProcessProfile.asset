@@ -160,7 +160,7 @@ MonoBehaviour:
     value: 20
   brightness:
     overrideState: 1
-    value: 0
+    value: 5
   postExposure:
     overrideState: 1
     value: 0
