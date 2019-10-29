@@ -22,6 +22,7 @@ public class UFOController : MonoBehaviour
     private void OnEnable()
     {
         EventManager<ITargetable>.AddHandler(EVENT.humanDetectEvent, AddTarget);
+        EventManager<ITargetable>.AddHandler(EVENT.bombDetectEvent, AddTarget);
         EventManager<int>.AddHandler(EVENT.gameUpdateEvent, ClearTargets);
     }
 

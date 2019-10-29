@@ -7,7 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using System.Linq;
 public class UIManager : MonoBehaviour
 {
     /// <summary>
@@ -15,13 +15,16 @@ public class UIManager : MonoBehaviour
     /// </summary>
     [SerializeField] private Image babyBar;
     [SerializeField] private float babyBarLerpSpeed = 2f;
-    [SerializeField] private Image collectedHumanCount;
+    //[SerializeField] private Image collectedHumanCount;
     [SerializeField] private int pointsForCompletedBar = 100;
+    [SerializeField] private float decreaseAmount = 0.01f;
+    [SerializeField] private float decreaseBoostTime = 60f;
+    [SerializeField] private List<Image> lives;
     private bool updateBabyBar = false;
     private bool updateHumanCount = false;
     private float newValue;
     private float newFillAmount;
-
+    private float gameTime = 0f;
     private void OnEnable()
     {
         //Add the updatebabybar method to the gameupdate event
@@ -29,8 +32,32 @@ public class UIManager : MonoBehaviour
         //fillBar for collectedHumanCount
         //EventManager<ITargetable>.AddHandler(EVENT.humanDetectEvent, UpdateHumanCount);
         EventManager<int>.AddHandler(EVENT.barCompletedEvent, ClearBabyBar);
+        Globals.OnLivesLostEvent += UpdatePlayerLives;
     }
 
+    private void OnDisable()
+    {
+        Globals.OnLivesLostEvent -= UpdatePlayerLives;
+    }
+
+    private void Start()
+    {
+        StartCoroutine(DecreaseUp());
+        StartCoroutine(Decrease());
+    }
+
+    public void UpdatePlayerLives()
+    {
+        if (lives.Count < 1) return;
+
+        var find = lives.FindLast(i => i.gameObject.activeSelf);
+        if(find == null)
+        {
+            Globals.OnGameOverEvent();
+        }
+        else
+            find.gameObject.SetActive(false);
+    }
     /// <summary>
     /// Add or remove received percentage to the babyBar
     /// </summary>
@@ -70,14 +97,9 @@ public class UIManager : MonoBehaviour
         if(babyBar.fillAmount != babyBar.fillAmount + newValue && updateBabyBar)
         {
             babyBar.fillAmount = Mathf.Lerp(babyBar.fillAmount, newValue, babyBarLerpSpeed * Time.deltaTime);
+            StartCoroutine(SetBack());
         }
-        //fillBar for collectedHumanCount
-        /*
-        if(collectedHumanCount.fillAmount != collectedHumanCount.fillAmount + newFillAmount && updateHumanCount)
-        {
-            collectedHumanCount.fillAmount = Mathf.Lerp(collectedHumanCount.fillAmount, newFillAmount, babyBarLerpSpeed * Time.deltaTime);
-        }*/
-        if(babyBar.fillAmount >= 1)
+        if (babyBar.fillAmount >= 1)
         {
             EventManager<int>.BroadCast(EVENT.barCompletedEvent, pointsForCompletedBar);
         }
@@ -85,5 +107,24 @@ public class UIManager : MonoBehaviour
         {
             Globals.OnGameOverEvent();
         }
+    }
+    private IEnumerator Decrease()
+    {
+        yield return new WaitForEndOfFrame();
+        babyBar.fillAmount -= decreaseAmount;
+        StartCoroutine(Decrease());
+    }
+
+    private IEnumerator SetBack()
+    {
+        yield return new WaitForSeconds(2f);
+        updateBabyBar = false;
+    }
+
+    private IEnumerator DecreaseUp()
+    {
+        yield return new WaitForSeconds(decreaseBoostTime);
+        decreaseAmount += 0.0001f;
+        StartCoroutine(DecreaseUp());
     }
 }

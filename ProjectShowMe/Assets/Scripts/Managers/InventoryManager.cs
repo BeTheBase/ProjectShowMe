@@ -13,7 +13,7 @@ public class InventoryManager : GenericSingleton<InventoryManager, IInventory>, 
 {
     [SerializeField] private List<Image> humanInventoryImages;
     private int index = 0;
-    [SerializeField] private List<HumanType> currentHumanTypes = new List<HumanType>();
+    private List<HumanType> currentHumanTypes = new List<HumanType>();
 
     private void OnEnable()
     {
@@ -23,12 +23,12 @@ public class InventoryManager : GenericSingleton<InventoryManager, IInventory>, 
 
     public void SetItem(ITargetable targetable)
     {
-        if (index > humanInventoryImages.Count)
+        if (index > humanInventoryImages.Count-1)
             return;
         if (humanInventoryImages[index].IsActive()) index += 1;
-        if (index > humanInventoryImages.Count)
+        if (index > humanInventoryImages.Count-1)
             return;
-        if (index <= humanInventoryImages.Count)
+        if (index <= humanInventoryImages.Count-1)
         {
             humanInventoryImages[index].gameObject.SetActive(true);
             humanInventoryImages[index].sprite = targetable.GetTargetImage();

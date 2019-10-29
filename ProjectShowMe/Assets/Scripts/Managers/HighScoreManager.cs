@@ -7,7 +7,7 @@ public class HighScoreManager : MonoBehaviour
     [SerializeField] private GameObject highScorePanel;
     [SerializeField] private List<Text> highScoreTexts;
     [SerializeField] private List<ScoreData> AllScoreData;
-    [SerializeField] private List<int> scores;
+    [SerializeField] private List<int> scores = new List<int>();
     [SerializeField] private int currentScore;
 
     private string jsonString;

@@ -20,7 +20,8 @@ namespace Humans
         Small = 6,
         Cool = 4,
         Rare = 2,
-        Legendary = 1
+        Legendary = 1,
+        Bomber = 0
     }
     [RequireComponent(typeof(PatrolPoints))]
     [RequireComponent(typeof(NavMeshAgent))]
@@ -36,6 +37,7 @@ namespace Humans
         private NavMeshAgent Agent { get; set; }
 
         private int randomSpot = 0;
+        private Vector3 newPosition = Vector3.zero;
 
         public HumanType HumanType = HumanType.Normal;
 
@@ -51,9 +53,9 @@ namespace Humans
 
         private void Start()
         {
-
-            HumanIcons.Init();
             randomSpot = Random.Range(0, PatrolPositions.PatrolSpots.Count);
+            newPosition = new Vector3(PatrolPositions.PatrolSpots[randomSpot].position.x, 0, PatrolPositions.PatrolSpots[randomSpot].position.z);
+
         }
 
         private void Update()
@@ -64,12 +66,21 @@ namespace Humans
 
             if (Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(PatrolPositions.PatrolSpots[randomSpot].position.x, 0, PatrolPositions.PatrolSpots[randomSpot].position.z)) > 1f)
             {
-                if(Agent.enabled)
-                    Agent.SetDestination(PatrolPositions.PatrolSpots[randomSpot].position);
+                try
+                {
+                    if (Agent.enabled)
+                        if(Agent.isOnNavMesh)
+                            Agent.SetDestination(new Vector3(PatrolPositions.PatrolSpots[randomSpot].position.x, 0, PatrolPositions.PatrolSpots[randomSpot].position.z)     );
+                }
+                catch
+                {
+
+                }
             }
             else
             {
                 randomSpot = Random.Range(0, PatrolPositions.PatrolSpots.Count);
+                newPosition = PatrolPositions.PatrolSpots[randomSpot].position;
             }
         }
 
@@ -89,7 +100,6 @@ namespace Humans
         {
             EventManager<GameObject>.BroadCast(EVENT.humanCollected, this.gameObject);
             gameObject.SetActive(false);
-
         }
 
         public HumanType GetHumanType()
@@ -115,6 +125,11 @@ namespace Humans
         public void BeemHuman(Transform position, float speed)
         {
             transform.LerpTransform(this, position.position, speed);
+        }
+
+        public void RunAway(Transform point)
+        {
+            newPosition = new Vector3(point.position.x, 0, point.position.z);
         }
     }
 }

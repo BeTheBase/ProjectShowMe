@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/LevelThijs.unity
+- path: Assets/Scenes/LevelBasPhase4.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
