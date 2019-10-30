@@ -9,12 +9,14 @@ using UnityEngine;
 
 public class UFOController : MonoBehaviour
 {
-    private List<ITargetable> targets = new List<ITargetable>();
+    [SerializeField] private List<AudioClip> humanBeemClips;
+    [SerializeField] private AudioSource audioSource;
     public float Speed = 5f;
     public GameObject UFO;
     public int ID = 0;
     public float UFOHeight = 6f;
     public float UFORayWidth = 5f;
+    private List<ITargetable> targets = new List<ITargetable>();
     private float TimeToAdd = 2f;
     private float MaxTimeToAdd = 2f;
     private int maxTargetInventorySpace = 2;
@@ -34,13 +36,16 @@ public class UFOController : MonoBehaviour
 
     private void MoveUFO()
     {
-        Vector3 mouse = Input.mousePosition;
-        Ray castPoint = Camera.main.ScreenPointToRay(mouse);
-        RaycastHit hit;
-        if (Physics.Raycast(castPoint, out hit, Mathf.Infinity))
+        if (Input.GetMouseButton(0))
         {
-            Vector3 newPosition = new Vector3(hit.point.x, UFOHeight, hit.point.z);
-            UFO.transform.position = Vector3.Lerp(UFO.transform.position, newPosition, Speed * Time.deltaTime);
+            Vector3 mouse = Input.mousePosition;
+            Ray castPoint = Camera.main.ScreenPointToRay(mouse);
+            RaycastHit hit;
+            if (Physics.Raycast(castPoint, out hit, Mathf.Infinity))
+            {
+                Vector3 newPosition = new Vector3(hit.point.x, UFOHeight, hit.point.z);
+                UFO.transform.position = Vector3.Lerp(UFO.transform.position, newPosition, Speed * Time.deltaTime);
+            }
         }
     }
 
@@ -73,6 +78,8 @@ public class UFOController : MonoBehaviour
         {
             targets.Add(targetable);
             targetable.BeemHuman(UFO.transform, Speed);
+            audioSource.clip = humanBeemClips[Random.Range(0, humanBeemClips.Count - 1)];
+            audioSource.Play();
             StartCoroutine(Timer.Start(TimeToAdd, false, ()=>
             {
                 targetable.Remove();

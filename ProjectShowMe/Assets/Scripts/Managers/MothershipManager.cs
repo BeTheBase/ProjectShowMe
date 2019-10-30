@@ -45,7 +45,7 @@ public class MothershipManager : MonoBehaviour
         {
             human.SetActive(true);
             human.transform.position = lerpFromPoint.position;
-            human.transform.LerpTransform(this, lerpTowardsPoint.position, lerpSpeed);
+            //human.transform.LerpTransform(this, lerpTowardsPoint.position, lerpSpeed);
             StartCoroutine(Timer.Start(lerpSpeed, false, ()=>
             {
                 human.SetActive(false);
