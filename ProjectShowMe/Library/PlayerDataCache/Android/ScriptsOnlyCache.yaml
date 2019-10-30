@@ -54,7 +54,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -785,7 +784,7 @@ ScriptsOnlyBuild:
     className: triggerForce
   - hash:
       serializedVersion: 2
-      Hash: 3f5acb1659962fe7867a132d8de98e3c
+      Hash: 0ff8da72d7aa856f446ceffe2bae17ae
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UFOController
@@ -809,7 +808,7 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 93db5c4e2e3af13991c956e73ee77bee
+      Hash: 9f222d5973f2e032408604fd8874c501
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIManager
@@ -1109,11 +1108,11 @@ ScriptsOnlyBuild:
     className: Flikker
   - hash:
       serializedVersion: 2
-      Hash: c58b214dc5386fa2b4456082eb70b1b6
+      Hash: 5eb167e45893eba0208422299753f880
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameUIManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/LevelBasPhase4.unity
-  playerPath: D:/School/Jaar2/ShowMe/ProjectShowMe/TestBuildV105.apk
+  playerPath: D:/School/Jaar2/ShowMe/ProjectShowMe/TestBuildV106.apk

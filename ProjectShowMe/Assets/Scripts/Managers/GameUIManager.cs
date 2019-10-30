@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameUIManager : MonoBehaviour
 {
@@ -37,6 +38,11 @@ public class GameUIManager : MonoBehaviour
     public void EndGame()
     {
         PauseGame(gameOverGameObject);
+    }
+
+    public void RetryGame()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void CheckOnBaby(int amount)
