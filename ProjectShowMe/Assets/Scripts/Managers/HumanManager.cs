@@ -64,12 +64,18 @@ public class HumanManager : MonoBehaviour
                 }
             }
         }*/
+        List<float> randomFloats = new List<float>();
 
         foreach(HumanData humanData in humans)
         {
-            for(int index = 0; index < (humanData.percentage/100 * amount); index++)
+            float calculate = humanData.percentage / 100 * amount;
+            for (int index = 0; index < calculate; index++)
             {
-                Spawn(humanData.prefab, spawnAreas[Random.Range(0, spawnAreas.Count)].position, Quaternion.identity, humanData.humanType, humanData.patrolPoints);
+                //if (Random.value < (calculate/10))
+                //{
+                    Spawn(humanData.prefab, spawnAreas[Random.Range(0, spawnAreas.Count)].position, Quaternion.identity, humanData.humanType, humanData.patrolPoints);
+                //}
+                amount--;
             }
         }
     }
