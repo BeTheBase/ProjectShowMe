@@ -20,6 +20,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private float decreaseAmount = 0.01f;
     [SerializeField] private float decreaseBoostTime = 60f;
     [SerializeField] private List<Image> lives;
+    [SerializeField] private GameObject congrats;
+    [SerializeField] private float barCompletedTime = 5f;
     private bool updateBabyBar = false;
     private bool updateHumanCount = false;
     private float newValue;
@@ -79,9 +81,14 @@ public class UIManager : MonoBehaviour
 
     public void ClearBabyBar(int empty)
     {
-        newValue = 0;
-        babyBar.fillAmount = 0.1f;
-        updateBabyBar = true;
+        congrats.SetActive(true);
+        StartCoroutine(Timer.Start(barCompletedTime, false, () =>
+        {
+            newValue = 0;
+            babyBar.fillAmount = 0.5f;
+            updateBabyBar = true;
+            congrats.SetActive(false);
+        }));
     }
 
     //fillBar for collectedHumanCount
