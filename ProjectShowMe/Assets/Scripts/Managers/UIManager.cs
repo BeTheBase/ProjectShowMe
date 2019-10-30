@@ -79,8 +79,8 @@ public class UIManager : MonoBehaviour
 
     public void ClearBabyBar(int empty)
     {
-        newValue = 1;
-        babyBar.fillAmount = 1;
+        newValue = 0;
+        babyBar.fillAmount = 0.1f;
         updateBabyBar = true;
     }
 
