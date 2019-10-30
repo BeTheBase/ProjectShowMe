@@ -16,7 +16,7 @@ public class HighScoreManager : MonoBehaviour
     {
         EventManager<int>.AddHandler(EVENT.barCompletedEvent, AddScore);
         Globals.OnGameOverEvent += SaveScore;
-        scores = JsonConverter<int>.FromJson(jsonString, "/HighScoreData.json");
+        //scores = JsonConverter<int>.FromJson(jsonString, "/HighScoreData.json");
     }
 
     public void AddScore(int score)
@@ -27,7 +27,7 @@ public class HighScoreManager : MonoBehaviour
     public void SaveScore()
     {
         scores.Add(currentScore);
-        jsonString = JsonConverter<int>.SerializeToJson(scores, jsonString, "/HighScoreData.json");
+        //jsonString = JsonConverter<int>.SerializeToJson(scores, jsonString, "/HighScoreData.json");
     }
 
     public void ShowScores()

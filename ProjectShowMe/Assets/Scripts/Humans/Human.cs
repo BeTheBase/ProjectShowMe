@@ -28,6 +28,8 @@ namespace Humans
     [RequireComponent(typeof(Rigidbody))]
     public class Human : MonoBehaviour, ITargetable
     {
+        public HumanType HumanType = HumanType.Normal;
+
         [SerializeField] private float rotationAndLerpSpeed = 5f;
 
         private PatrolPoints PatrolPositions { get; set; }
@@ -39,8 +41,8 @@ namespace Humans
         private int randomSpot = 0;
         private Vector3 newPosition = Vector3.zero;
 
-        public HumanType HumanType = HumanType.Normal;
-
+        private bool beemReady = false;
+        private Vector3 ufoPosition = Vector3.zero;
         private void Awake()
         {
             if (!RBody)
@@ -64,13 +66,13 @@ namespace Humans
             var step = rotationAndLerpSpeed * Time.deltaTime;
             Vector3 newDir = Vector3.RotateTowards(transform.forward, newPointDistance, step, 0.0f);
 
-            if (Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(PatrolPositions.PatrolSpots[randomSpot].position.x, 0, PatrolPositions.PatrolSpots[randomSpot].position.z)) > 1f)
+            if (Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), newPosition) > 1f)
             {
                 try
                 {
                     if (Agent.enabled)
                         if(Agent.isOnNavMesh)
-                            Agent.SetDestination(new Vector3(PatrolPositions.PatrolSpots[randomSpot].position.x, 0, PatrolPositions.PatrolSpots[randomSpot].position.z)     );
+                            Agent.SetDestination(newPosition);
                 }
                 catch
                 {
@@ -80,7 +82,7 @@ namespace Humans
             else
             {
                 randomSpot = Random.Range(0, PatrolPositions.PatrolSpots.Count);
-                newPosition = PatrolPositions.PatrolSpots[randomSpot].position;
+                newPosition = new Vector3(PatrolPositions.PatrolSpots[randomSpot].position.x, 0, PatrolPositions.PatrolSpots[randomSpot].position.z);
             }
         }
 
@@ -99,6 +101,7 @@ namespace Humans
         public void Remove()
         {
             EventManager<GameObject>.BroadCast(EVENT.humanCollected, this.gameObject);
+            transform.parent = null;
             gameObject.SetActive(false);
         }
 
@@ -124,11 +127,13 @@ namespace Humans
 
         public void BeemHuman(Transform position, float speed)
         {
+            transform.parent = position;
             transform.LerpTransform(this, position.position, speed);
         }
 
         public void RunAway(Transform point)
         {
+            Agent.speed *= 2;
             newPosition = new Vector3(point.position.x, 0, point.position.z);
         }
     }

@@ -16,6 +16,7 @@ public class BomberMan : MonoBehaviour, ITargetable
 {
     [SerializeField] private float rotationAndLerpSpeed = 5f;
     [SerializeField] private GameObject bomb;
+    [SerializeField] private float liveTime = 30f;
     [SerializeField] private float explodeAfterTime = 1.5f;
     [SerializeField] private float speed = 4f;
     [SerializeField] private float boostTime = 1f;
@@ -44,11 +45,22 @@ public class BomberMan : MonoBehaviour, ITargetable
             Agent = GetComponent<NavMeshAgent>();
 
         StartCoroutine(Boost());
+        StartCoroutine(Die());
     }
     private IEnumerator ActivateBomb(Transform position)
     {
         yield return new WaitForSeconds(explodeAfterTime);
         GameObject explosion = Instantiate(bomb, position);
+    }
+
+    private IEnumerator Die()
+    {
+        yield return new WaitForSeconds(liveTime);
+        StartCoroutine(ActivateBomb(this.transform));
+        StartCoroutine(Timer.Start(explodeAfterTime+0.5f, false, () =>
+            {
+                gameObject.SetActive(false);
+            }));
     }
 
     private IEnumerator Boost()
@@ -80,6 +92,7 @@ public class BomberMan : MonoBehaviour, ITargetable
 
     public void BeemHuman(Transform position, float speed)
     {
+        transform.parent = position;
         transform.LerpTransform(this, position.position, speed);
         StartCoroutine(ActivateBomb(position));
     }
@@ -98,6 +111,7 @@ public class BomberMan : MonoBehaviour, ITargetable
 
     public void Remove()
     {
+        transform.parent = null;
         Globals.OnLivesLostEvent();
         gameObject.SetActive(false);
     }
